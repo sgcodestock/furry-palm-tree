@@ -12,13 +12,8 @@
     <dependencies>
         <dependency>
             <groupId>com.griddynamics.lms</groupId>
-            <artifactId>framework</artifactId>
-            <version>${project.version}</version>
-        </dependency>
-        <dependency>
-            <groupId>com.griddynamics.lms</groupId>
             <artifactId>ingrid-domain</artifactId>
-            <version>${project.version}</version>
+            <version>10.0</version>
         </dependency>
         <dependency>
             <groupId>org.springframework</groupId>
