@@ -1,0 +1,83 @@
+<databaseChangeLog
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+         http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.1.xsd">
+    <changeSet id="add account image to db" author="devlakhova">
+        <insert tableName="IMAGE">
+            <column name="ID" value="73d881e6-7bc6-43f4-b7f0-4f4b89d88c16"/>
+            <column name="FILE_TYPE" value=".png"/>
+            <column name="IMAGE_DATA" valueBlobFile="img/accounts/aeo.png"/>
+        </insert>
+        <insert tableName="IMAGE">
+            <column name="ID" value="79381840-92b0-4c65-af89-ddf0241af02a"/>
+            <column name="FILE_TYPE" value=".png"/>
+            <column name="IMAGE_DATA" valueBlobFile="img/accounts/catalina.png"/>
+        </insert>
+        <insert tableName="IMAGE">
+            <column name="ID" value="ae36d9f3-5c85-402e-a9b6-2b93a6d6e72d"/>
+            <column name="FILE_TYPE" value=".png"/>
+            <column name="IMAGE_DATA" valueBlobFile="img/accounts/google.png"/>
+        </insert>
+        <insert tableName="IMAGE">
+            <column name="ID" value="2b766bf7-c51e-41e0-a4cf-1586b14b7fbf"/>
+            <column name="FILE_TYPE" value=".png"/>
+            <column name="IMAGE_DATA" valueBlobFile="img/accounts/griddynamics.png"/>
+        </insert>
+        <insert tableName="IMAGE">
+            <column name="ID" value="9df45c4d-82b2-4931-8fe4-f754a55a0ee3"/>
+            <column name="FILE_TYPE" value=".png"/>
+            <column name="IMAGE_DATA" valueBlobFile="img/accounts/icrossing.png"/>
+        </insert>
+        <insert tableName="IMAGE">
+            <column name="ID" value="d87c2863-7245-4e9e-98bf-2bb7f53b5eb4"/>
+            <column name="FILE_TYPE" value=".png"/>
+            <column name="IMAGE_DATA" valueBlobFile="img/accounts/ing.png"/>
+        </insert>
+        <insert tableName="IMAGE">
+            <column name="ID" value="c6fdd959-0c9b-44ec-afc9-ee09978deae0"/>
+            <column name="FILE_TYPE" value=".png"/>
+            <column name="IMAGE_DATA" valueBlobFile="img/accounts/integral-ad-science.png"/>
+        </insert>
+        <insert tableName="IMAGE">
+            <column name="ID" value="6d3dc961-1c3a-4f87-b74c-01bb92ea9e93"/>
+            <column name="FILE_TYPE" value=".png"/>
+            <column name="IMAGE_DATA" valueBlobFile="img/accounts/kohls.png"/>
+        </insert>
+        <insert tableName="IMAGE">
+            <column name="ID" value="1951fc81-a08d-4ac8-b76a-d0f55ee9d057"/>
+            <column name="FILE_TYPE" value=".png"/>
+            <column name="IMAGE_DATA" valueBlobFile="img/accounts/macys.png"/>
+        </insert>
+        <insert tableName="IMAGE">
+            <column name="ID" value="ebd668a2-dae8-4762-9a01-d3f71a536959"/>
+            <column name="FILE_TYPE" value=".png"/>
+            <column name="IMAGE_DATA" valueBlobFile="img/accounts/merkle.png"/>
+        </insert>
+        <insert tableName="IMAGE">
+            <column name="ID" value="ac4971fb-bfba-4aa9-aa66-9d54db8fcb02"/>
+            <column name="FILE_TYPE" value=".png"/>
+            <column name="IMAGE_DATA" valueBlobFile="img/accounts/rally-health.png"/>
+        </insert>
+        <insert tableName="IMAGE">
+            <column name="ID" value="bdab4b82-edd9-4c04-8c23-9fc2d976d4b6"/>
+            <column name="FILE_TYPE" value=".png"/>
+            <column name="IMAGE_DATA" valueBlobFile="img/accounts/raymond-james.png"/>
+        </insert>
+        <insert tableName="IMAGE">
+            <column name="ID" value="0453ce05-7265-4d14-aa5c-20880563b93a"/>
+            <column name="FILE_TYPE" value=".png"/>
+            <column name="IMAGE_DATA" valueBlobFile="img/accounts/ring-central.png"/>
+        </insert>
+        <insert tableName="IMAGE">
+            <column name="ID" value="44dff7e3-ac6a-4f10-9f46-b4206793e05f"/>
+            <column name="FILE_TYPE" value=".png"/>
+            <column name="IMAGE_DATA" valueBlobFile="img/accounts/tonomi-engineering.png"/>
+        </insert>
+        <insert tableName="IMAGE">
+            <column name="ID" value="5d5c7a7a-bd91-45f5-8f51-887288ae381a"/>
+            <column name="FILE_TYPE" value=".png"/>
+            <column name="IMAGE_DATA" valueBlobFile="img/accounts/tonomi-operations.png"/>
+        </insert>
+    </changeSet>
+</databaseChangeLog>

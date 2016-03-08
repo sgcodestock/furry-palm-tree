@@ -1,0 +1,5 @@
+com/griddynamics/lms/api/dao/database/LastSynchronizationTimeDaoTest$1.class
+com/griddynamics/lms/api/dao/database/LastSynchronizationTimeDaoTest.class
+com/griddynamics/lms/api/dao/database/configuration/TestHibernateContextConfiguration.class
+com/griddynamics/lms/api/dao/ldap/impl/LDAPLastModifyTimestampConverterTest.class
+com/griddynamics/lms/api/dao/database/configuration/TestDatabaseDaoContextConfiguration.class

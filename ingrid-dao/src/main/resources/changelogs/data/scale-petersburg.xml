@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<databaseChangeLog
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+         http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.1.xsd">
+
+    <changeSet id="scale-petersburg" author="abakulin" context="default" runOnChange="true">
+        <comment>Scales employees coordinates in Saint Petersburg map after map was resize</comment>
+        <sql>update location_info set x_position = null, y_position = null where x_position = 'NaN' or y_position = 'NaN';</sql>
+        <sql>
+            update location_info set x_position = ((x_position::float * 1.4990)::int - 124)::VARCHAR(255), y_position = ((y_position::float * 1.4976)::int - 229)::varchar(255)
+            where city = 'PETERSBURG' and x_position is NOT NULL and y_position is not null;
+        </sql>
+    </changeSet>
+</databaseChangeLog>

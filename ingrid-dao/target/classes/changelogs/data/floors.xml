@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<databaseChangeLog
+xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+         http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.1.xsd">
+
+<changeSet id="change-loors-logic" author="ylauresh" context="default">
+    <sql>update location_info SET floor='0' where city = 'KHARKOV' and floor is null;</sql>
+    <sql>update location_info SET floor='2' where city = 'SARATOV';</sql>
+    <sql>update location_info SET floor='3' where city = 'PETERSBURG';</sql>
+    <sql>update location_info SET floor='4' where city = 'MENLOPARK';</sql>
+    <sql>update location_info SET floor='5' where city = 'KRAKOV';</sql>
+    <sql>update location_info SET floor='6' where city = 'UN_KNOW';</sql>
+</changeSet>
+
+<changeSet author="ylauresh" id="addNotNullConstraint-floor">
+    <addNotNullConstraint columnDataType="int"
+                          columnName="floor"
+                          defaultNullValue="0"
+                          tableName="location_info"/>
+</changeSet>
+</databaseChangeLog>

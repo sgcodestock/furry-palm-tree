@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<databaseChangeLog
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+         http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.1.xsd">
+    <changeSet id="add resource image to db" author="devlakhova">
+        <insert tableName="IMAGE">
+            <column name="ID" value="18bc3657-c222-4922-a23c-d543e0bed82c"/>
+            <column name="IMAGE_DATA" valueBlobFile="img/resources/bamboohr.png"/>
+        </insert>
+        <insert tableName="IMAGE">
+            <column name="ID" value="c1f3a39f-7843-46ad-b16f-3bdc062bd564"/>
+            <column name="IMAGE_DATA" valueBlobFile="img/resources/benefit.png"/>
+        </insert>
+        <insert tableName="IMAGE">
+            <column name="ID" value="880caac8-3a5d-45e0-8537-865eac481bae"/>
+            <column name="IMAGE_DATA" valueBlobFile="img/resources/cop.png"/>
+        </insert>
+        <insert tableName="IMAGE">
+            <column name="ID" value="bc408e8e-7461-4d56-a052-0bf328f18048"/>
+            <column name="IMAGE_DATA" valueBlobFile="img/resources/medical.gif"/>
+        </insert>
+        <insert tableName="IMAGE">
+            <column name="ID" value="fc7491ca-5bdc-431d-8b9c-33ed5e286fc0"/>
+            <column name="IMAGE_DATA" valueBlobFile="img/resources/performance.jpg"/>
+        </insert>
+        <insert tableName="IMAGE">
+            <column name="ID" value="b77863f7-bedd-483d-8a24-b60e0acceb0a"/>
+            <column name="IMAGE_DATA" valueBlobFile="img/resources/pmo-banner.jpg"/>
+        </insert>
+        <insert tableName="IMAGE">
+            <column name="ID" value="339aa754-9ec9-41de-91ac-889d19f92e1e"/>
+            <column name="IMAGE_DATA" valueBlobFile="img/resources/referral.png"/>
+        </insert>
+        <insert tableName="IMAGE">
+            <column name="ID" value="6935cbac-d986-452d-adf9-aef1de404fa3"/>
+            <column name="IMAGE_DATA" valueBlobFile="img/resources/security.png"/>
+        </insert>
+        <insert tableName="IMAGE">
+            <column name="ID" value="6bc06be7-fa3f-402e-b2c7-44211250a24c"/>
+            <column name="IMAGE_DATA" valueBlobFile="img/resources/skills-tree.jpg"/>
+        </insert>
+        <insert tableName="IMAGE">
+            <column name="ID" value="05736d2f-cae1-46a7-9613-e569e223ab83"/>
+            <column name="IMAGE_DATA" valueBlobFile="img/resources/travel.jpg"/>
+        </insert>
+        <insert tableName="IMAGE">
+            <column name="ID" value="0f440b38-9303-4786-a1b2-f7884990a5d7"/>
+            <column name="IMAGE_DATA" valueBlobFile="img/resources/who_is.png"/>
+        </insert>
+        <insert tableName="IMAGE">
+            <column name="ID" value="91412821-0889-4ce7-8c3a-b839be4b1c81"/>
+            <column name="IMAGE_DATA" valueBlobFile="img/resources/wiki.png"/>
+        </insert>
+        <insert tableName="IMAGE">
+            <column name="ID" value="ef664e7a-5429-4973-980d-c596c5c329db"/>
+            <column name="IMAGE_DATA" valueBlobFile="img/resources/logo_big_natural.png"/>
+        </insert>
+    </changeSet>
+
+    <changeSet id="add account images" author="vbosikashvili">
+        <insert tableName="IMAGE">
+            <column name="ID" value="73d881e6-7bc6-75aw-b7f0-4f4b89d88c16"/>
+            <column name="IMAGE_DATA" valueBlobFile="img/accounts/svb.png"/>
+        </insert>
+        <insert tableName="IMAGE">
+            <column name="ID" value="73d881e6-8bc6-55aw-b1f0-5f4b89d94c16"/>
+            <column name="IMAGE_DATA" valueBlobFile="img/accounts/tonomi-field.png"/>
+        </insert>
+        <insert tableName="IMAGE">
+            <column name="ID" value="84d881e9-1tr6-35aw-b1f0-5f4b89d94c11"/>
+            <column name="IMAGE_DATA" valueBlobFile="img/accounts/sephora.jpg"/>
+        </insert>
+    </changeSet>
+
+</databaseChangeLog>

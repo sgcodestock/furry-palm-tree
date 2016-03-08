@@ -1,0 +1,1123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<databaseChangeLog
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+         http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.1.xsd">
+
+    <changeSet id="release-1.0" author="tmagrys" context="default" runOnChange="true">
+        <delete tableName="ROOM">
+        </delete>
+
+        <!-- Kharkov 4th floor -->
+
+        <insert tableName="ROOM">
+            <column name="id" value="d1b68787-3772-474d-9c9d-b5e38b01ecfe"/>
+            <column name="city" value="KHARKOV"/>
+            <column name="floor" value="0"/>
+            <column name="room_id" value="room_hr_4_panama"/>
+            <column name="name" value="Panama"/>
+            <column name="capacity" value="20"/>
+        </insert>
+        <insert tableName="ROOM">
+            <column name="id" value="826d3aae-b0ee-4030-86eb-f2c2119836bf"/>
+            <column name="city" value="KHARKOV"/>
+            <column name="floor" value="0"/>
+            <column name="room_id" value="room_hr_4_costa_rika"/>
+            <column name="name" value="Costa Rica"/>
+            <column name="capacity" value="20"/>
+        </insert>
+        <insert tableName="ROOM">
+            <column name="id" value="2167514c-a7e2-4152-bf21-7694db8659cc"/>
+            <column name="city" value="KHARKOV"/>
+            <column name="floor" value="0"/>
+            <column name="room_id" value="room_hr_4_sydney"/>
+            <column name="name" value="Sydney"/>
+            <column name="capacity" value="20"/>
+        </insert>
+        <insert tableName="ROOM">
+            <column name="id" value="4a098ba1-3a29-40cb-8b55-b4acc4c10246"/>
+            <column name="city" value="KHARKOV"/>
+            <column name="floor" value="0"/>
+            <column name="room_id" value="room_hr_4_petersburg"/>
+            <column name="name" value="St Petersburg"/>
+            <column name="capacity" value="20"/>
+        </insert>
+        <insert tableName="ROOM">
+            <column name="id" value="993df375-e444-4a0d-8fe5-29b54a979ce9"/>
+            <column name="city" value="KHARKOV"/>
+            <column name="floor" value="0"/>
+            <column name="room_id" value="room_hr_4_room_1"/>
+            <column name="name" value="Room 1"/>
+            <column name="capacity" value="20"/>
+        </insert>
+        <insert tableName="ROOM">
+            <column name="id" value="d87eb809-1285-40b8-9aa8-8f0fd96a4c1c"/>
+            <column name="city" value="KHARKOV"/>
+            <column name="floor" value="0"/>
+            <column name="room_id" value="room_hr_4_room_2"/>
+            <column name="name" value="Room 2"/>
+            <column name="capacity" value="20"/>
+        </insert>
+        <insert tableName="ROOM">
+            <column name="id" value="59011a04-ad84-4624-8268-3ef14d63d617"/>
+            <column name="city" value="KHARKOV"/>
+            <column name="floor" value="0"/>
+            <column name="room_id" value="room_hr_4_room_3"/>
+            <column name="name" value="Room 3"/>
+            <column name="capacity" value="20"/>
+        </insert>
+        <insert tableName="ROOM">
+            <column name="id" value="86f92a6b-143f-4af5-8ba8-4cf174ad3d73"/>
+            <column name="city" value="KHARKOV"/>
+            <column name="floor" value="0"/>
+            <column name="room_id" value="room_hr_4_room_4"/>
+            <column name="name" value="Room 4"/>
+            <column name="capacity" value="20"/>
+        </insert>
+        <insert tableName="ROOM">
+            <column name="id" value="86cc2877-d3d3-4b69-95bd-a85c889b8fd7"/>
+            <column name="city" value="KHARKOV"/>
+            <column name="floor" value="0"/>
+            <column name="room_id" value="room_hr_4_room_5"/>
+            <column name="name" value="Room 5"/>
+            <column name="capacity" value="20"/>
+        </insert>
+        <insert tableName="ROOM">
+            <column name="id" value="83181842-1ced-4a39-8731-148e893e8fe6"/>
+            <column name="city" value="KHARKOV"/>
+            <column name="floor" value="0"/>
+            <column name="room_id" value="room_hr_4_room_6"/>
+            <column name="name" value="Room 6"/>
+            <column name="capacity" value="20"/>
+        </insert>
+        <insert tableName="ROOM">
+            <column name="id" value="0880f87c-0d90-4ba3-b8e9-85e57caa4e78"/>
+            <column name="city" value="KHARKOV"/>
+            <column name="floor" value="0"/>
+            <column name="room_id" value="room_hr_4_room_7"/>
+            <column name="name" value="Room 7"/>
+            <column name="capacity" value="20"/>
+        </insert>
+
+        <!-- -Kharkov 5th floor -->
+
+        <insert tableName="ROOM">
+            <column name="id" value="bf0f7248-b37f-46ab-9192-4b797007cbf4"/>
+            <column name="city" value="KHARKOV"/>
+            <column name="floor" value="1"/>
+            <column name="room_id" value="room_hr_5_tokyo"/>
+            <column name="name" value="Tokyo"/>
+            <column name="capacity" value="20"/>
+        </insert>
+        <insert tableName="ROOM">
+            <column name="id" value="e581a657-c71b-469e-a1bf-ec787973bbfb"/>
+            <column name="city" value="KHARKOV"/>
+            <column name="floor" value="1"/>
+            <column name="room_id" value="room_hr_5_madrid"/>
+            <column name="name" value="Madrid"/>
+            <column name="capacity" value="20"/>
+        </insert>
+        <insert tableName="ROOM">
+            <column name="id" value="3bf8d4e6-2fde-46b0-a3ed-778976c043ec"/>
+            <column name="city" value="KHARKOV"/>
+            <column name="floor" value="1"/>
+            <column name="room_id" value="room_hr_5_meyrin"/>
+            <column name="name" value="Meyrin"/>
+            <column name="capacity" value="20"/>
+        </insert>
+        <insert tableName="ROOM">
+            <column name="id" value="5595d8d6-9b7c-47cf-a5b6-f2ea18d5beaf"/>
+            <column name="city" value="KHARKOV"/>
+            <column name="floor" value="1"/>
+            <column name="room_id" value="room_hr_5_monaco"/>
+            <column name="name" value="Monaco"/>
+            <column name="capacity" value="20"/>
+        </insert>
+        <insert tableName="ROOM">
+            <column name="id" value="7f757735-21cb-45d9-b657-fa44676400fe"/>
+            <column name="city" value="KHARKOV"/>
+            <column name="floor" value="1"/>
+            <column name="room_id" value="room_hr_5_room_1"/>
+            <column name="name" value="Room 1"/>
+            <column name="capacity" value="20"/>
+        </insert>
+        <insert tableName="ROOM">
+            <column name="id" value="766f40b1-3b89-40e3-b2d2-7ed8898a5a16"/>
+            <column name="city" value="KHARKOV"/>
+            <column name="floor" value="1"/>
+            <column name="room_id" value="room_hr_5_room_2"/>
+            <column name="name" value="Room 2"/>
+            <column name="capacity" value="20"/>
+        </insert>
+        <insert tableName="ROOM">
+            <column name="id" value="26b62879-7916-44ca-a6dc-62f97a22658f"/>
+            <column name="city" value="KHARKOV"/>
+            <column name="floor" value="1"/>
+            <column name="room_id" value="room_hr_5_montecarlo"/>
+            <column name="name" value="Montecarlo"/>
+            <column name="capacity" value="20"/>
+        </insert>
+        <insert tableName="ROOM">
+            <column name="id" value="c08e0dcf-c099-48dc-b26a-4b31f5f3f7d4"/>
+            <column name="city" value="KHARKOV"/>
+            <column name="floor" value="1"/>
+            <column name="room_id" value="room_hr_5_paris"/>
+            <column name="name" value="Paris"/>
+            <column name="capacity" value="20"/>
+        </insert>
+        <insert tableName="ROOM">
+            <column name="id" value="63b79e46-c9b7-4007-9f33-d8c3239ec68f"/>
+            <column name="city" value="KHARKOV"/>
+            <column name="floor" value="1"/>
+            <column name="room_id" value="room_hr_5_mexico"/>
+            <column name="name" value="Mexico"/>
+            <column name="capacity" value="20"/>
+        </insert>
+        <insert tableName="ROOM">
+            <column name="id" value="ac8f28bb-6555-4f13-851b-a383ec030bd6"/>
+            <column name="city" value="KHARKOV"/>
+            <column name="floor" value="1"/>
+            <column name="room_id" value="room_hr_5_new_york"/>
+            <column name="name" value="New York"/>
+            <column name="capacity" value="20"/>
+        </insert>
+        <insert tableName="ROOM">
+            <column name="id" value="9d95545b-aea4-46e0-bd35-b327a4aae296"/>
+            <column name="city" value="KHARKOV"/>
+            <column name="floor" value="1"/>
+            <column name="room_id" value="room_hr_5_wellington"/>
+            <column name="name" value="Wellington"/>
+            <column name="capacity" value="20"/>
+        </insert>
+        <insert tableName="ROOM">
+            <column name="id" value="f66441ca-dfcc-42ff-bad9-16be870c2d2a"/>
+            <column name="city" value="KHARKOV"/>
+            <column name="floor" value="1"/>
+            <column name="room_id" value="room_hr_5_luxembourg"/>
+            <column name="name" value="Luxembourg"/>
+            <column name="capacity" value="20"/>
+        </insert>
+        <insert tableName="ROOM">
+            <column name="id" value="ec10580b-b793-4551-9c6e-b80614837292"/>
+            <column name="city" value="KHARKOV"/>
+            <column name="floor" value="1"/>
+            <column name="room_id" value="room_hr_5_washington"/>
+            <column name="name" value="Washington"/>
+            <column name="capacity" value="20"/>
+        </insert>
+        <insert tableName="ROOM">
+            <column name="id" value="f66441ca-dfcc-42ff-bad9-16be110c2d2a"/>
+            <column name="city" value="KHARKOV"/>
+            <column name="floor" value="1"/>
+            <column name="room_id" value="room_hr_5_vatican"/>
+            <column name="name" value="Vatican"/>
+            <column name="capacity" value="20"/>
+        </insert>
+        <insert tableName="ROOM">
+            <column name="id" value="ec10580b-b793-4551-9c6e-b80614997292"/>
+            <column name="city" value="KHARKOV"/>
+            <column name="floor" value="1"/>
+            <column name="room_id" value="room_hr_5_rome"/>
+            <column name="name" value="Rome"/>
+            <column name="capacity" value="20"/>
+        </insert>
+
+        <!-- Cracow -->
+
+        <insert tableName="ROOM">
+            <column name="id" value="5f999207-263c-4621-b877-8c98d1788ee1"/>
+            <column name="city" value="KRAKOV"/>
+            <column name="room_id" value="room_kr_1"/>
+            <column name="name" value="Room 1"/>
+            <column name="capacity" value="20"/>
+        </insert>
+        <insert tableName="ROOM">
+            <column name="id" value="78f83927-d689-4b0d-b3bf-c4daeeffe421"/>
+            <column name="city" value="KRAKOV"/>
+            <column name="room_id" value="room_kr_2"/>
+            <column name="name" value="Room 2"/>
+            <column name="capacity" value="20"/>
+        </insert>
+        <insert tableName="ROOM">
+            <column name="id" value="37110644-357f-4a4d-acea-d9abe0227a22"/>
+            <column name="city" value="KRAKOV"/>
+            <column name="room_id" value="room_kr_3"/>
+            <column name="name" value="Room 4"/>
+            <column name="capacity" value="20"/>
+        </insert>
+        <insert tableName="ROOM">
+            <column name="id" value="4184160c-2c05-40b3-9646-2562d46c7e9c"/>
+            <column name="city" value="KRAKOV"/>
+            <column name="room_id" value="room_kr_4"/>
+            <column name="name" value="Room 4"/>
+            <column name="capacity" value="20"/>
+        </insert>
+
+        <!-- St. Petersburg -->
+
+        <insert tableName="ROOM">
+            <column name="id" value="61cac0c9-213f-4494-9c31-89abf1659bf6"/>
+            <column name="city" value="PETERSBURG"/>
+            <column name="room_id" value="noname"/>
+            <column name="name" value="No Name"/>
+            <column name="capacity" value="20"/>
+        </insert>
+        <insert tableName="ROOM">
+            <column name="id" value="62cac0c9-213f-4494-9c31-89abf1659bf6"/>
+            <column name="city" value="PETERSBURG"/>
+            <column name="room_id" value="room_spb_501_b"/>
+            <column name="name" value="501"/>
+            <column name="capacity" value="20"/>
+        </insert>
+        <insert tableName="ROOM">
+            <column name="id" value="63cac0c9-213f-4494-9c31-89abf1659bf6"/>
+            <column name="city" value="PETERSBURG"/>
+            <column name="room_id" value="room_spb_502_b"/>
+            <column name="name" value="502"/>
+            <column name="capacity" value="20"/>
+        </insert>
+        <insert tableName="ROOM">
+            <column name="id" value="64cac0c9-213f-4494-9c31-89abf1659bf6"/>
+            <column name="city" value="PETERSBURG"/>
+            <column name="room_id" value="room_spb_503_b"/>
+            <column name="name" value="503"/>
+            <column name="capacity" value="20"/>
+        </insert>
+        <insert tableName="ROOM">
+            <column name="id" value="65cac0c9-213f-4494-9c31-89abf1659bf6"/>
+            <column name="city" value="PETERSBURG"/>
+            <column name="room_id" value="room_spb_504_b"/>
+            <column name="name" value="504"/>
+            <column name="capacity" value="20"/>
+        </insert>
+        <insert tableName="ROOM">
+            <column name="id" value="66cac0c9-213f-4494-9c31-89abf1659bf6"/>
+            <column name="city" value="PETERSBURG"/>
+            <column name="room_id" value="room_spb_505_b"/>
+            <column name="name" value="505"/>
+            <column name="capacity" value="20"/>
+        </insert>
+        <insert tableName="ROOM">
+            <column name="id" value="67cac0c9-213f-4494-9c31-89abf1659bf6"/>
+            <column name="city" value="PETERSBURG"/>
+            <column name="room_id" value="room_spb_506_b"/>
+            <column name="name" value="506"/>
+            <column name="capacity" value="20"/>
+        </insert>
+        <insert tableName="ROOM">
+            <column name="id" value="5171189c-71ef-4ebe-b101-61b1865bbcb5"/>
+            <column name="city" value="PETERSBURG"/>
+            <column name="room_id" value="room_spb_507_b"/>
+            <column name="name" value="507"/>
+            <column name="capacity" value="20"/>
+        </insert>
+        <insert tableName="ROOM">
+            <column name="id" value="68cac0c9-213f-4494-9c31-89abf1659bf6"/>
+            <column name="city" value="PETERSBURG"/>
+            <column name="room_id" value="room_spb_508_b"/>
+            <column name="name" value="508"/>
+            <column name="capacity" value="20"/>
+        </insert>
+        <insert tableName="ROOM">
+            <column name="id" value="69cac0c9-213f-4494-9c31-89abf1659bf6"/>
+            <column name="city" value="PETERSBURG"/>
+            <column name="room_id" value="room_spb_509_b"/>
+            <column name="name" value="509"/>
+            <column name="capacity" value="20"/>
+        </insert>
+        <insert tableName="ROOM">
+            <column name="id" value="70cac0c9-213f-4494-9c31-89abf1659bf6"/>
+            <column name="city" value="PETERSBURG"/>
+            <column name="room_id" value="room_spb_513_b"/>
+            <column name="name" value="513"/>
+            <column name="capacity" value="20"/>
+        </insert>
+        <insert tableName="ROOM">
+            <column name="id" value="71cac1c9-213f-4494-9c31-89abf1659bf6"/>
+            <column name="city" value="PETERSBURG"/>
+            <column name="room_id" value="room_spb_514_b"/>
+            <column name="name" value="514"/>
+            <column name="capacity" value="20"/>
+        </insert>
+        <insert tableName="ROOM">
+            <column name="id" value="71cac0c9-213f-4494-9c31-89abf1659bf6"/>
+            <column name="city" value="PETERSBURG"/>
+            <column name="room_id" value="room_spb_516_b"/>
+            <column name="name" value="516"/>
+            <column name="capacity" value="20"/>
+        </insert>
+        <insert tableName="ROOM">
+            <column name="id" value="72cac0c9-213f-4494-9c31-89abf1659bf6"/>
+            <column name="city" value="PETERSBURG"/>
+            <column name="room_id" value="room_spb_517_b"/>
+            <column name="name" value="517"/>
+            <column name="capacity" value="20"/>
+        </insert>
+        <insert tableName="ROOM">
+            <column name="id" value="73cac0c9-213f-4494-9c31-89abf1659bf6"/>
+            <column name="city" value="PETERSBURG"/>
+            <column name="room_id" value="room_spb_518_b"/>
+            <column name="name" value="518"/>
+            <column name="capacity" value="20"/>
+        </insert>
+        <insert tableName="ROOM">
+            <column name="id" value="74cac0c9-213f-4494-9c31-89abf1659bf6"/>
+            <column name="city" value="PETERSBURG"/>
+            <column name="room_id" value="room_spb_519_b"/>
+            <column name="name" value="519"/>
+            <column name="capacity" value="20"/>
+        </insert>
+        <insert tableName="ROOM">
+            <column name="id" value="75cac0c9-213f-4494-9c31-89abf1659bf6"/>
+            <column name="city" value="PETERSBURG"/>
+            <column name="room_id" value="room_spb_520_b"/>
+            <column name="name" value="520"/>
+            <column name="capacity" value="20"/>
+        </insert>
+        <insert tableName="ROOM">
+            <column name="id" value="2e8d10c0-9546-426e-b469-e30b378dca0f"/>
+            <column name="city" value="PETERSBURG"/>
+            <column name="room_id" value="room_spb_521_b"/>
+            <column name="name" value="521"/>
+            <column name="capacity" value="20"/>
+        </insert>
+        <insert tableName="ROOM">
+            <column name="id" value="e5402c1a-555d-4c36-a9fc-2daf04e9d366"/>
+            <column name="city" value="PETERSBURG"/>
+            <column name="room_id" value="room_spb_522_b"/>
+            <column name="name" value="522"/>
+            <column name="capacity" value="20"/>
+        </insert>
+        <insert tableName="ROOM">
+            <column name="id" value="76cac0c9-213f-4494-9c31-89abf1659bf6"/>
+            <column name="city" value="PETERSBURG"/>
+            <column name="room_id" value="room_spb_523_b"/>
+            <column name="name" value="523"/>
+            <column name="capacity" value="20"/>
+        </insert>
+        <insert tableName="ROOM">
+            <column name="id" value="77cac0c9-213f-4494-9c31-89abf1659bf6"/>
+            <column name="city" value="PETERSBURG"/>
+            <column name="room_id" value="room_spb_524_b"/>
+            <column name="name" value="524"/>
+            <column name="capacity" value="20"/>
+        </insert>
+        <insert tableName="ROOM">
+            <column name="id" value="78cac0c9-213f-4494-9c31-89abf1659bf6"/>
+            <column name="city" value="PETERSBURG"/>
+            <column name="room_id" value="room_spb_515_b"/>
+            <column name="name" value="515"/>
+            <column name="capacity" value="20"/>
+        </insert>
+        <insert tableName="ROOM">
+            <column name="id" value="79cac0c9-213f-4494-9c31-89abf1659bf6"/>
+            <column name="city" value="PETERSBURG"/>
+            <column name="room_id" value="room_spb_500_v"/>
+            <column name="name" value="500"/>
+            <column name="capacity" value="20"/>
+        </insert>
+        <insert tableName="ROOM">
+            <column name="id" value="80cac0c9-213f-4494-9c31-89abf1659bf6"/>
+            <column name="city" value="PETERSBURG"/>
+            <column name="room_id" value="room_spb_501_v"/>
+            <column name="name" value="501"/>
+            <column name="capacity" value="20"/>
+        </insert>
+        <insert tableName="ROOM">
+            <column name="id" value="81cac0c9-213f-4494-9c31-89abf1659bf6"/>
+            <column name="city" value="PETERSBURG"/>
+            <column name="room_id" value="room_spb_502_v"/>
+            <column name="name" value="502"/>
+            <column name="capacity" value="20"/>
+        </insert>
+        <insert tableName="ROOM">
+            <column name="id" value="82cac0c9-213f-4494-9c31-89abf1659bf6"/>
+            <column name="city" value="PETERSBURG"/>
+            <column name="room_id" value="room_spb_503_v"/>
+            <column name="name" value="503"/>
+            <column name="capacity" value="20"/>
+        </insert>
+        <insert tableName="ROOM">
+            <column name="id" value="83cac0c9-213f-4494-9c31-89abf1659bf6"/>
+            <column name="city" value="PETERSBURG"/>
+            <column name="room_id" value="room_spb_504_v"/>
+            <column name="name" value="504"/>
+            <column name="capacity" value="20"/>
+        </insert>
+        <insert tableName="ROOM">
+            <column name="id" value="84cac0c9-213f-4494-9c31-89abf1659bf6"/>
+            <column name="city" value="PETERSBURG"/>
+            <column name="room_id" value="room_spb_505_v"/>
+            <column name="name" value="505"/>
+            <column name="capacity" value="20"/>
+        </insert>
+        <insert tableName="ROOM">
+            <column name="id" value="85cac0c9-213f-4494-9c31-89abf1659bf6"/>
+            <column name="city" value="PETERSBURG"/>
+            <column name="room_id" value="room_spb_509_v"/>
+            <column name="name" value="509"/>
+            <column name="capacity" value="20"/>
+        </insert>
+        <insert tableName="ROOM">
+            <column name="id" value="86cac0c9-213f-4494-9c31-89abf1659bf6"/>
+            <column name="city" value="PETERSBURG"/>
+            <column name="room_id" value="room_spb_510_v"/>
+            <column name="name" value="510"/>
+            <column name="capacity" value="20"/>
+        </insert>
+        <insert tableName="ROOM">
+            <column name="id" value="87cac0c9-213f-4494-9c31-89abf1659bf6"/>
+            <column name="city" value="PETERSBURG"/>
+            <column name="room_id" value="room_spb_511_v"/>
+            <column name="name" value="511"/>
+            <column name="capacity" value="20"/>
+        </insert>
+        <insert tableName="ROOM">
+            <column name="id" value="88cac0c9-213f-4494-9c31-89abf1659bf6"/>
+            <column name="city" value="PETERSBURG"/>
+            <column name="room_id" value="room_spb_512_v"/>
+            <column name="name" value="512"/>
+            <column name="capacity" value="20"/>
+        </insert>
+        <insert tableName="ROOM">
+            <column name="id" value="89cac0c9-213f-4494-9c31-89abf1659bf6"/>
+            <column name="city" value="PETERSBURG"/>
+            <column name="room_id" value="room_spb_513_v"/>
+            <column name="name" value="513"/>
+            <column name="capacity" value="20"/>
+        </insert>
+        <insert tableName="ROOM">
+            <column name="id" value="90cac0c9-213f-4494-9c31-89abf1659bf6"/>
+            <column name="city" value="PETERSBURG"/>
+            <column name="room_id" value="room_spb_514_v"/>
+            <column name="name" value="514"/>
+            <column name="capacity" value="20"/>
+        </insert>
+        <insert tableName="ROOM">
+            <column name="id" value="91cac0c9-213f-4494-9c31-89abf1659bf6"/>
+            <column name="city" value="PETERSBURG"/>
+            <column name="room_id" value="room_spb_515_v"/>
+            <column name="name" value="515"/>
+            <column name="capacity" value="20"/>
+        </insert>
+        <insert tableName="ROOM">
+            <column name="id" value="92cac0c9-213f-4494-9c31-89abf1659bf6"/>
+            <column name="city" value="PETERSBURG"/>
+            <column name="room_id" value="room_spb_516_v"/>
+            <column name="name" value="516"/>
+            <column name="capacity" value="20"/>
+        </insert>
+
+
+
+        <!-- Saratov -->
+
+        <insert tableName="ROOM">
+            <column name="id" value="fcb7f366-2b1c-457f-9d6b-3965f9f47058"/>
+            <column name="city" value="SARATOV"/>
+            <column name="room_id" value="room_sar_723"/>
+            <column name="name" value="723"/>
+            <column name="capacity" value="20"/>
+        </insert>
+        <insert tableName="ROOM">
+            <column name="id" value="b561be88-2f97-4191-8cc6-5f89a30e583a"/>
+            <column name="city" value="SARATOV"/>
+            <column name="room_id" value="room_sar_724"/>
+            <column name="name" value="724"/>
+            <column name="capacity" value="20"/>
+        </insert>
+        <insert tableName="ROOM">
+            <column name="id" value="fa4ea240-9bbf-4bf4-a3d9-3612c7c74067"/>
+            <column name="city" value="SARATOV"/>
+            <column name="room_id" value="room_sar_725"/>
+            <column name="name" value="725"/>
+            <column name="capacity" value="20"/>
+        </insert>
+        <insert tableName="ROOM">
+            <column name="id" value="4dfda627-20d8-45fb-9437-6cde4f6a0d24"/>
+            <column name="city" value="SARATOV"/>
+            <column name="room_id" value="room_sar_726"/>
+            <column name="name" value="726"/>
+            <column name="capacity" value="20"/>
+        </insert>
+        <insert tableName="ROOM">
+            <column name="id" value="94a956ec-5c48-49fa-aa37-7a827667d651"/>
+            <column name="city" value="SARATOV"/>
+            <column name="room_id" value="room_sar_716"/>
+            <column name="name" value="716"/>
+            <column name="capacity" value="20"/>
+        </insert>
+        <insert tableName="ROOM">
+            <column name="id" value="29120ff0-8a6e-4033-b5dc-d869cb80e225"/>
+            <column name="city" value="SARATOV"/>
+            <column name="room_id" value="room_sar_714"/>
+            <column name="name" value="714"/>
+            <column name="capacity" value="20"/>
+        </insert>
+        <insert tableName="ROOM">
+            <column name="id" value="ab1d929b-6568-4e91-9a77-f3caf25dd336"/>
+            <column name="city" value="SARATOV"/>
+            <column name="room_id" value="room_sar_713_3"/>
+            <column name="name" value="713-3"/>
+            <column name="capacity" value="20"/>
+        </insert>
+        <insert tableName="ROOM">
+            <column name="id" value="7acddffe-a1cd-42c2-a2e8-ef0bfcf6d8a8"/>
+            <column name="city" value="SARATOV"/>
+            <column name="room_id" value="room_sar_713_4"/>
+            <column name="name" value="713-4"/>
+            <column name="capacity" value="20"/>
+        </insert>
+        <insert tableName="ROOM">
+            <column name="id" value="8eed8d9a-36d9-4f20-b3e9-340a01855e9a"/>
+            <column name="city" value="SARATOV"/>
+            <column name="room_id" value="room_sar_701_2"/>
+            <column name="name" value="701-2"/>
+            <column name="capacity" value="20"/>
+        </insert>
+        <insert tableName="ROOM">
+            <column name="id" value="6ec61e4a-8378-4ecd-b4b5-0e05f84bc480"/>
+            <column name="city" value="SARATOV"/>
+            <column name="room_id" value="room_sar_701_3"/>
+            <column name="name" value="701-3"/>
+            <column name="capacity" value="20"/>
+        </insert>
+        <insert tableName="ROOM">
+            <column name="id" value="3c66ff8a-e230-4351-89c6-88f4609b0581"/>
+            <column name="city" value="SARATOV"/>
+            <column name="room_id" value="room_sar_702"/>
+            <column name="name" value="702"/>
+            <column name="capacity" value="20"/>
+        </insert>
+        <insert tableName="ROOM">
+            <column name="id" value="2a9a8517-875c-489c-8796-810019e1df2e"/>
+            <column name="city" value="SARATOV"/>
+            <column name="room_id" value="room_sar_703"/>
+            <column name="name" value="703"/>
+            <column name="capacity" value="20"/>
+        </insert>
+        <insert tableName="ROOM">
+            <column name="id" value="8cc50312-f393-4003-b478-1be45776ee40"/>
+            <column name="city" value="SARATOV"/>
+            <column name="room_id" value="room_sar_704_1"/>
+            <column name="name" value="704-1"/>
+            <column name="capacity" value="20"/>
+        </insert>
+        <insert tableName="ROOM">
+            <column name="id" value="b1b219c1-37f7-45ae-b5d9-36be10674b5e"/>
+            <column name="city" value="SARATOV"/>
+            <column name="room_id" value="room_sar_705"/>
+            <column name="name" value="705"/>
+            <column name="capacity" value="20"/>
+        </insert>
+        <insert tableName="ROOM">
+            <column name="id" value="2b1e1bb7-74b4-461b-a7c3-0cfa0395b996"/>
+            <column name="city" value="SARATOV"/>
+            <column name="room_id" value="room_sar_706"/>
+            <column name="name" value="706"/>
+            <column name="capacity" value="20"/>
+        </insert>
+        <insert tableName="ROOM">
+            <column name="id" value="e1a9f244-cbbb-4cf3-8d4f-74d64f3846bc"/>
+            <column name="city" value="SARATOV"/>
+            <column name="room_id" value="room_sar_707"/>
+            <column name="name" value="707"/>
+            <column name="capacity" value="20"/>
+        </insert>
+        <insert tableName="ROOM">
+            <column name="id" value="f087f1e3-4d80-493f-a40f-f1850292a61e"/>
+            <column name="city" value="SARATOV"/>
+            <column name="room_id" value="room_sar_708"/>
+            <column name="name" value="708"/>
+            <column name="capacity" value="20"/>
+        </insert>
+        <insert tableName="ROOM">
+            <column name="id" value="4286eda8-9de3-43ec-a555-9d0b3afb3e2f"/>
+            <column name="city" value="SARATOV"/>
+            <column name="room_id" value="room_sar_709_1"/>
+            <column name="name" value="709-1"/>
+            <column name="capacity" value="20"/>
+        </insert>
+        <insert tableName="ROOM">
+            <column name="id" value="1b742694-cc7b-4a65-b50c-f0bd1f1c332d"/>
+            <column name="city" value="SARATOV"/>
+            <column name="room_id" value="room_sar_709_2"/>
+            <column name="name" value="709-2"/>
+            <column name="capacity" value="20"/>
+        </insert>
+        <insert tableName="ROOM">
+            <column name="id" value="9e40db4d-a633-4f76-bdb2-8df76ecd46e9"/>
+            <column name="city" value="SARATOV"/>
+            <column name="room_id" value="room_sar_710"/>
+            <column name="name" value="710"/>
+            <column name="capacity" value="20"/>
+        </insert>
+
+        <!-- Menlo - park -->
+
+        <insert tableName="ROOM">
+            <column name="id" value="98656756-8222-4a3e-957a-84a07e7a46e3"/>
+            <column name="city" value="MENLOPARK"/>
+            <column name="room_id" value="room_mp_1"/>
+            <column name="name" value="Room 1"/>
+            <column name="capacity" value="20"/>
+        </insert>
+        <insert tableName="ROOM">
+            <column name="id" value="5618ce98-4ae0-41e7-968b-201d270da5f5"/>
+            <column name="city" value="MENLOPARK"/>
+            <column name="room_id" value="room_mp_2"/>
+            <column name="name" value="Room 2"/>
+            <column name="capacity" value="20"/>
+        </insert>
+        <insert tableName="ROOM">
+            <column name="id" value="b9c90eeb-cdf3-40f4-8219-73e5ac4b6fa7"/>
+            <column name="city" value="MENLOPARK"/>
+            <column name="room_id" value="room_mp_3"/>
+            <column name="name" value="Room 3"/>
+            <column name="capacity" value="20"/>
+        </insert>
+        <insert tableName="ROOM">
+            <column name="id" value="a4e1d5a5-0c7e-4220-a774-1794e1357667"/>
+            <column name="city" value="MENLOPARK"/>
+            <column name="room_id" value="room_mp_4"/>
+            <column name="name" value="Room 4"/>
+            <column name="capacity" value="20"/>
+        </insert>
+        <insert tableName="ROOM">
+            <column name="id" value="8c9060f4-2848-4dba-8fa2-f3309e9fcd18"/>
+            <column name="city" value="MENLOPARK"/>
+            <column name="room_id" value="room_mp_5"/>
+            <column name="name" value="Room 5"/>
+            <column name="capacity" value="20"/>
+        </insert>
+        <insert tableName="ROOM">
+            <column name="id" value="4a143422-0fc5-4b8e-a119-8b2096e5185f"/>
+            <column name="city" value="MENLOPARK"/>
+            <column name="room_id" value="room_mp_6"/>
+            <column name="name" value="Room 6"/>
+            <column name="capacity" value="20"/>
+        </insert>
+        <insert tableName="ROOM">
+            <column name="id" value="6491428e-4e6d-44e2-892d-7a81971903bd"/>
+            <column name="city" value="MENLOPARK"/>
+            <column name="room_id" value="room_mp_7"/>
+            <column name="name" value="Room 7"/>
+            <column name="capacity" value="20"/>
+        </insert>
+        <insert tableName="ROOM">
+            <column name="id" value="6823547c-9b48-43ec-b050-04c4a070061c"/>
+            <column name="city" value="MENLOPARK"/>
+            <column name="room_id" value="room_mp_8"/>
+            <column name="name" value="Room 8"/>
+            <column name="capacity" value="20"/>
+        </insert>
+        <insert tableName="ROOM">
+            <column name="id" value="ba56653a-6596-42ae-9dfb-31fc9be2407b"/>
+            <column name="city" value="MENLOPARK"/>
+            <column name="room_id" value="room_mp_9"/>
+            <column name="name" value="Room 9"/>
+            <column name="capacity" value="20"/>
+        </insert>
+        <insert tableName="ROOM">
+            <column name="id" value="bcec0ae9-4619-4a44-b452-6180fa98dfbf"/>
+            <column name="city" value="MENLOPARK"/>
+            <column name="room_id" value="room_mp_10"/>
+            <column name="name" value="Room 10"/>
+            <column name="capacity" value="20"/>
+        </insert>
+        <insert tableName="ROOM">
+            <column name="id" value="082444c4-09a9-43e3-a150-bf0a2bb2a9af"/>
+            <column name="city" value="MENLOPARK"/>
+            <column name="room_id" value="room_mp_11"/>
+            <column name="name" value="Room 11"/>
+            <column name="capacity" value="20"/>
+        </insert>
+        <insert tableName="ROOM">
+            <column name="id" value="a60b770e-6086-43f5-91b7-91a36be6fa5b"/>
+            <column name="city" value="MENLOPARK"/>
+            <column name="room_id" value="room_mp_12"/>
+            <column name="name" value="Room 12"/>
+            <column name="capacity" value="20"/>
+        </insert>
+    </changeSet>
+    
+    <changeSet id="update-krakow-room" author="tkhusainov">
+        <update tableName="ROOM">
+            <column name="name" value="RJ" />
+            <where>room_id='room_kr_4'</where>
+        </update>
+        <update tableName="ROOM">
+            <column name="name" value="Room 3" />
+            <where>room_id='room_kr_3'</where>
+        </update>
+    </changeSet>
+
+    <changeSet id="update-krakow-room-2" author="tkhusainov">
+        <update tableName="ROOM">
+            <column name="y" value="327.40302" />
+            <where>room_id='room_kr_3'</where>
+        </update>
+        <update tableName="ROOM">
+            <column name="width" value="50.040901" />
+            <where>room_id='room_kr_3'</where>
+        </update>
+        <update tableName="ROOM">
+            <column name="height" value="38.280499" />
+            <where>room_id='room_kr_3'</where>
+        </update>
+
+    </changeSet>
+    
+    <changeSet id="spb-room-numbers" author="tkhusainov" runOnChange="true">
+        <update tableName="ROOM">
+            <column name="room_id" value="room_spb_566" />
+            <column name="name" value="566" />
+            <where>room_id='room_spb_509_b'</where>
+        </update>
+        <update tableName="ROOM">
+            <column name="room_id" value="room_spb_567" />
+            <column name="name" value="567" />
+            <where>room_id='room_spb_508_b'</where>
+        </update>
+        <update tableName="ROOM">
+            <column name="room_id" value="room_spb_568" />
+            <column name="name" value="568" />
+            <where>room_id='room_spb_507_b'</where>
+        </update>
+        <update tableName="ROOM">
+            <column name="room_id" value="room_spb_569" />
+            <column name="name" value="569" />
+            <where>room_id='room_spb_506_b'</where>
+        </update>
+        <update tableName="ROOM">
+            <column name="room_id" value="room_spb_570" />
+            <column name="name" value="570" />
+            <where>room_id='room_spb_505_b'</where>
+        </update>
+        <update tableName="ROOM">
+            <column name="room_id" value="room_spb_570" />
+            <column name="name" value="570" />
+            <where>room_id='room_spb_505_b'</where>
+        </update>
+        <update tableName="ROOM">
+            <column name="room_id" value="room_spb_571" />
+            <column name="name" value="571" />
+            <where>room_id='room_spb_504_b'</where>
+        </update>
+        <update tableName="ROOM">
+            <column name="room_id" value="room_spb_571_1" />
+            <column name="name" value="Oval room" />
+            <column name="height" value="80.05" />
+            <where>room_id='room_spb_503_b'</where>
+        </update>
+        <update tableName="ROOM">
+            <column name="room_id" value="room_spb_572" />
+            <column name="name" value="572" />
+            <where>room_id='room_spb_502_b'</where>
+        </update>
+        <update tableName="ROOM">
+            <column name="room_id" value="room_spb_573" />
+            <column name="name" value="573" />
+            <where>room_id='room_spb_501_b'</where>
+        </update>
+        <update tableName="ROOM">
+            <column name="room_id" value="room_spb_554" />
+            <column name="name" value="554" />
+            <where>room_id='room_spb_513_b'</where>
+        </update>
+        <update tableName="ROOM">
+            <column name="room_id" value="room_spb_555" />
+            <column name="name" value="555" />
+            <where>room_id='room_spb_514_b'</where>
+        </update>
+        <update tableName="ROOM">
+            <column name="room_id" value="room_spb_556" />
+            <column name="name" value="556" />
+            <where>room_id='room_spb_515_b'</where>
+        </update>
+        <update tableName="ROOM">
+            <column name="room_id" value="room_spb_557" />
+            <column name="name" value="557" />
+            <where>room_id='room_spb_516_b'</where>
+        </update>
+        <update tableName="ROOM">
+            <column name="room_id" value="room_spb_558" />
+            <column name="name" value="558" />
+            <where>room_id='room_spb_517_b'</where>
+        </update>
+        <update tableName="ROOM">
+            <column name="room_id" value="room_spb_559" />
+            <column name="name" value="559" />
+            <where>room_id='room_spb_518_b'</where>
+        </update>
+        <update tableName="ROOM">
+            <column name="room_id" value="room_spb_560" />
+            <column name="name" value="560" />
+            <where>room_id='room_spb_519_b'</where>
+        </update>
+        <update tableName="ROOM">
+            <column name="room_id" value="room_spb_561" />
+            <column name="name" value="561" />
+            <where>room_id='room_spb_520_b'</where>
+        </update>
+        <update tableName="ROOM">
+            <column name="room_id" value="room_spb_562" />
+            <column name="name" value="562" />
+            <where>room_id='room_spb_521_b'</where>
+        </update>
+        <update tableName="ROOM">
+            <column name="room_id" value="room_spb_563" />
+            <column name="name" value="563" />
+            <column name="width" value="56.09" />
+            <where>room_id='room_spb_522_b'</where>
+        </update>
+        <delete tableName="ROOM">
+            <where>room_id='room_spb_523_b'</where>
+        </delete>
+        <delete tableName="ROOM">
+            <where>room_id='room_spb_524_b'</where>
+        </delete>
+        <delete tableName="ROOM">
+            <where>room_id='room_spb_509_v'</where>
+        </delete>
+        <delete tableName="ROOM">
+            <where>room_id='room_spb_510_v'</where>
+        </delete>
+        <delete tableName="ROOM">
+            <where>room_id='room_spb_511_v'</where>
+        </delete>
+        <delete tableName="ROOM">
+            <where>room_id='room_spb_512_v'</where>
+        </delete>
+
+        <!-- -->
+
+        <update tableName="ROOM">
+            <column name="room_id" value="room_spb_580" />
+            <column name="name" value="580" />
+            <where>room_id='room_spb_513_v'</where>
+        </update>
+        <update tableName="ROOM">
+            <column name="room_id" value="room_spb_581" />
+            <column name="name" value="581" />
+            <where>room_id='room_spb_514_v'</where>
+        </update>
+        <update tableName="ROOM">
+            <column name="room_id" value="room_spb_582" />
+            <column name="name" value="582" />
+            <where>room_id='room_spb_515_v'</where>
+        </update>
+        <update tableName="ROOM">
+            <column name="room_id" value="room_spb_582_1" />
+            <column name="name" value="Soft room" />
+            <where>room_id='room_spb_500_v'</where>
+        </update>
+        <update tableName="ROOM">
+            <column name="room_id" value="room_spb_583" />
+            <column name="name" value="583" />
+            <where>room_id='room_spb_501_v'</where>
+        </update>
+        <update tableName="ROOM">
+            <column name="room_id" value="room_spb_584" />
+            <column name="name" value="584" />
+            <where>room_id='room_spb_502_v'</where>
+        </update>
+        <update tableName="ROOM">
+            <column name="room_id" value="room_spb_585" />
+            <column name="name" value="585" />
+            <where>room_id='room_spb_503_v'</where>
+        </update>
+        <update tableName="ROOM">
+            <column name="room_id" value="room_spb_611" />
+            <column name="name" value="611" />
+            <where>room_id='noname'</where>
+        </update>
+        <delete tableName="ROOM">
+            <where>room_id='room_spb_504_v'</where>
+        </delete>
+        <update tableName="ROOM">
+            <column name="room_id" value="room_spb_594" />
+            <column name="name" value="594" />
+            <where>room_id='room_spb_505_v'</where>
+        </update>
+
+    </changeSet>
+
+    <changeSet id="mp-room-numbers" author="tkhusainov" runOnChange="true">
+        <update tableName="ROOM">
+                <column name="width" value="56.830952" />
+                <column name="height" value="42.916924" />
+                <column name="x" value="228.06261" />
+                <column name="y" value="76.169365" />
+                <where>room_id='room_mp_2'</where>
+        </update>
+        <update tableName="ROOM">
+            <column name="width" value="56.841602" />
+            <column name="height" value="41.983158" />
+            <column name="x" value="228.17171" />
+            <column name="y" value="118.17809" />
+            <where>room_id='room_mp_3'</where>
+        </update>
+        <update tableName="ROOM">
+            <column name="width" value="56.841694" />
+            <column name="height" value="41.97987" />
+            <column name="x" value="228.27536" />
+            <column name="y" value="202.10048" />
+            <where>room_id='room_mp_4'</where>
+        </update>
+        <update tableName="ROOM">
+            <column name="width" value="43.512333" />
+            <column name="height" value="76.246712" />
+            <column name="x" value="228.26424" />
+            <column name="y" value="399.24814" />
+            <where>room_id='room_mp_5'</where>
+        </update>
+        <update tableName="ROOM">
+            <column name="width" value="40.927341" />
+            <column name="height" value="58.031059" />
+            <column name="x" value="307.53125" />
+            <column name="y" value="517.98871" />
+            <where>room_id='room_mp_6'</where>
+        </update>
+        <delete tableName="ROOM">
+            <where>room_id='room_mp_8'</where>
+        </delete>
+        <delete tableName="ROOM">
+            <where>room_id='room_mp_9'</where>
+        </delete>
+        <delete tableName="ROOM">
+            <where>room_id='room_mp_10'</where>
+        </delete>
+        <delete tableName="ROOM">
+            <where>room_id='room_mp_11'</where>
+        </delete>
+        <delete tableName="ROOM">
+            <where>room_id='room_mp_12'</where>
+        </delete>
+
+
+    </changeSet>
+
+    <changeSet id="mp-room-numbers-2" author="tkhusainov" context="default">
+        <update tableName="ROOM">
+            <column name="room_id" value="room_mp_leonard" />
+            <column name="name" value="Leonard" />
+            <where>room_id='room_mp_1'</where>
+        </update>
+        <update tableName="ROOM">
+                <column name="room_id" value="room_mp_max" />
+                <column name="name" value="Max" />
+                <column name="width" value="56.830952" />
+                <column name="height" value="42.916924" />
+                <column name="x" value="228.06261" />
+                <column name="y" value="76.169365" />
+                <where>room_id='room_mp_2'</where>
+        </update>
+        <update tableName="ROOM">
+            <column name="room_id" value="room_mp_stan" />
+            <column name="name" value="Stan" />
+            <column name="width" value="56.841602" />
+            <column name="height" value="41.983158" />
+            <column name="x" value="228.17171" />
+            <column name="y" value="118.17809" />
+            <where>room_id='room_mp_3'</where>
+        </update>
+        <update tableName="ROOM">
+            <column name="room_id" value="room_mp_yury" />
+            <column name="name" value="Yury" />
+            <column name="width" value="56.841694" />
+            <column name="height" value="41.97987" />
+            <column name="x" value="228.27536" />
+            <column name="y" value="202.10048" />
+            <where>room_id='room_mp_4'</where>
+        </update>
+        <update tableName="ROOM">
+            <column name="room_id" value="room_mp_paul" />
+            <column name="name" value="Paul" />
+            <column name="width" value="43.512333" />
+            <column name="height" value="76.246712" />
+            <column name="x" value="228.26424" />
+            <column name="y" value="399.24814" />
+            <where>room_id='room_mp_5'</where>
+        </update>
+        <update tableName="ROOM">
+            <column name="room_id" value="room_mp_office" />
+            <column name="name" value="Office" />
+            <column name="width" value="40.927341" />
+            <column name="height" value="58.031059" />
+            <column name="x" value="307.53125" />
+            <column name="y" value="517.98871" />
+            <where>room_id='room_mp_6'</where>
+        </update>
+        <delete tableName="ROOM">
+            <where>room_id='room_mp_7'</where>
+        </delete>
+
+        <delete tableName="ROOM">
+            <where>room_id='room_mp_sar_1'</where>
+        </delete>
+        <delete tableName="ROOM">
+            <where>room_id='room_mp_sar_2'</where>
+        </delete>
+        <delete tableName="ROOM">
+            <where>room_id='room_mp_ali'</where>
+        </delete>
+        <insert tableName="ROOM">
+            <column name="id" value="3825540c-9b48-43ec-c050-04c4a074061c"/>
+            <column name="room_id" value="room_mp_sar_1"/>
+            <column name="name" value="Saratov" />
+            <column name="city" value="MENLOPARK" />
+            <column name="capacity" value="20" />
+            <column name="x" value="321.32498" />
+            <column name="y" value="21.085161" />
+            <column name="width" value="66.713539" />
+            <column name="height" value="104.15437" />
+        </insert>
+        <insert tableName="ROOM">
+            <column name="id" value="1825530c-ab48-48ec-3050-04c4a074c61c"/>
+            <column name="room_id" value="room_mp_sar_2"/>
+            <column name="name" value="Saratov-2" />
+            <column name="city" value="MENLOPARK" />
+            <column name="capacity" value="20" />
+            <column name="x" value="228.26427" />
+            <column name="y" value="475.70093" />
+            <column name="width" value="43.512333" />
+            <column name="height" value="76.246712" />
+        </insert>
+        <insert tableName="ROOM">
+            <column name="id" value="2a25500c-ab48-48ec-3050-04c4a074c61c"/>
+            <column name="room_id" value="room_mp_ali"/>
+            <column name="name" value="Ali" />
+            <column name="city" value="MENLOPARK" />
+            <column name="capacity" value="20" />
+            <column name="x" value="228.23474" />
+            <column name="y" value="160.34958" />
+            <column name="width" value="56.844608" />
+            <column name="height" value="41.721474" />
+        </insert>
+    </changeSet>
+    
+    <changeSet id="krakow2_new_rooms" author="devlakhova">
+        <insert tableName="ROOM">
+            <column name="id" value="16a39589-10bb-4559-930f-d5363ecb5f9f"/>
+            <column name="room_id" value="room_kr2_dev_room"/>
+            <column name="name" value="Dev room"/>
+            <column name="city" value="KRAKOW"/>
+            <column name="capacity" value="20"/>
+        </insert>
+        <insert tableName="ROOM">
+            <column name="id" value="15e1325e-3661-424b-a048-ca8d222ab03b"/>
+            <column name="room_id" value="room_kr2_admin_room"/>
+            <column name="name" value="Admin room"/>
+            <column name="city" value="KRAKOW"/>
+            <column name="capacity" value="20"/>
+        </insert>
+        <update tableName="ROOM">
+            <column name="floor" value="7"/>
+            <where>floor=6</where>
+        </update>
+    </changeSet>
+
+</databaseChangeLog>

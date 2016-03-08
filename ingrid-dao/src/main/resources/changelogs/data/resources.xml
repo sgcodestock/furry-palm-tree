@@ -1,0 +1,212 @@
+<databaseChangeLog
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.0.xsd">
+
+    <changeSet id="add-resources" author="abakulin" context="default" runOnChange="true">
+        <comment>
+            Contains resources description for Resources page
+        </comment>
+
+        <delete tableName="resource"/>
+
+        <insert tableName="resource">
+            <column name="id" value="0ebbaab9-f99b-4d74-bf68-ba7e878e77c5"/>
+            <column name="title" value="Security"/>
+            <column name="link" value="https://wiki.griddynamics.net/display/CTO/Information+Security"/>
+            <column name="image_link" value="resources/security.png"/>
+        </insert>
+        <insert tableName="resource">
+            <column name="id" value="e4e1509d-a014-4e3f-b33f-3eb30e832a01"/>
+            <column name="title" value="Skill Tree"/>
+            <column name="link" value="http://skilltree.griddynamics.net/"/>
+            <column name="image_link" value="resources/skills-tree.jpg"/>
+        </insert>
+        <insert tableName="resource">
+            <column name="id" value="9dd214eb-4499-4998-bd16-1f81edaf28ae"/>
+            <column name="title" value="Whois"/>
+            <column name="link" value="http://whois.griddynamics.net/"/>
+            <column name="image_link" value="resources/who_is.png"/>
+        </insert>
+        <insert tableName="resource">
+            <column name="id" value="dcc017b7-e049-4e9b-a623-56b73423d60a"/>
+            <column name="title" value="Benefit program"/>
+            <column name="link" value="https://wiki.griddynamics.net/pages/viewpage.action?pageId=1081464"/>
+            <column name="image_link" value="resources/benefit.png"/>
+        </insert>
+        <insert tableName="resource">
+            <column name="id" value="5eec5cdb-514a-40da-bcc5-4c5136e96c3a"/>
+            <column name="title" value="Referral program"/>
+            <column name="link" value="https://wiki.griddynamics.net/display/HQ/Referral+Bonus+Policy%2C+Offshore"/>
+            <column name="image_link" value="resources/referral.png"/>
+        </insert>
+        <insert tableName="resource">
+            <column name="id" value="e9ea0076-c358-43c6-8cde-6cc9691e6edd"/>
+            <column name="title" value="Medical Insurance"/>
+            <column name="link" value="https://wiki.griddynamics.net/display/HQ/Health+and+Welfare+Coverage"/>
+            <column name="image_link" value="resources/medical.gif"/>
+        </insert>
+        <insert tableName="resource">
+            <column name="id" value="f87ff644-6c2f-4b22-bb18-dd209a74a849"/>
+            <column name="title" value="Bamboohr.com"/>
+            <column name="link" value="https://griddynamics.bamboohr.com/"/>
+            <column name="image_link" value="resources/bamboohr.png"/>
+        </insert>
+        <insert tableName="resource">
+            <column name="id" value="dbf9e4de-0f5a-4ed7-ab31-6be82b4ca160"/>
+            <column name="title" value="PMO"/>
+            <column name="link" value="http://pmo.griddynamics.net/"/>
+            <column name="image_link" value="resources/pmo-banner.jpg"/>
+        </insert>
+        <insert tableName="resource">
+            <column name="id" value="7b6ae3b7-a2e4-49ed-868a-e66fb319ee7e"/>
+            <column name="title" value="Wiki"/>
+            <column name="link" value="https://wiki.griddynamics.net/"/>
+            <column name="image_link" value="resources/wiki.png"/>
+        </insert>
+        <insert tableName="resource">
+            <column name="id" value="614a36cb-65c8-44d1-a578-30054802cdd1"/>
+            <column name="title" value="Travel"/>
+            <column name="link" value="https://travel.griddynamics.net/"/>
+            <column name="image_link" value="resources/travel.jpg"/>
+        </insert>
+        <insert tableName="resource">
+            <column name="id" value="d540c628-71d0-4e26-a745-8a0f3a96101e"/>
+            <column name="title" value="PR Process"/>
+            <column name="link" value="https://wiki.griddynamics.net/pages/viewpage.action?pageId=98302720"/>
+            <column name="image_link" value="resources/performance.jpg"/>
+        </insert>
+        <insert tableName="resource">
+            <column name="id" value="cbd29313-ab9a-4980-b223-e604a19d769c"/>
+            <column name="title" value="Grid Dynamics"/>
+            <column name="link" value="http://griddynamics.com/"/>
+            <column name="image_link" value="logo_big_natural.png"/>
+        </insert>
+
+        <rollback>
+            <delete tableName="resource"/>
+        </rollback>
+    </changeSet>
+
+    <changeSet id="add-resources" author="tkhusainov" context="default" runOnChange="true">
+
+        <comment>
+            Fill description column
+        </comment>
+
+        <update tableName="resource">
+            <column name="description" value="Our official page" />
+            <where>id='cbd29313-ab9a-4980-b223-e604a19d769c'</where>
+        </update>
+        <update tableName="resource">
+            <column name="description" value="Learn about Performance Review (PR) process in GD" />
+            <where>id='d540c628-71d0-4e26-a745-8a0f3a96101e'</where>
+        </update>
+        <update tableName="resource">
+            <column name="description" value="Travel starts here!" />
+            <where>id='614a36cb-65c8-44d1-a578-30054802cdd1'</where>
+        </update>
+        <update tableName="resource">
+            <column name="description" value="Everything about us and even more" />
+            <where>id='7b6ae3b7-a2e4-49ed-868a-e66fb319ee7e'</where>
+        </update>
+        <update tableName="resource">
+            <column name="description" value="Project management office" />
+            <where>id='dbf9e4de-0f5a-4ed7-ab31-6be82b4ca160'</where>
+        </update>
+        <update tableName="resource">
+            <column name="description" value="Our HR portal" />
+            <where>id='f87ff644-6c2f-4b22-bb18-dd209a74a849'</where>
+        </update>
+        <update tableName="resource">
+            <column name="description" value="Everything about company's health plans" />
+            <where>id='e9ea0076-c358-43c6-8cde-6cc9691e6edd'</where>
+        </update>
+        <update tableName="resource">
+            <column name="description" value="Invite a friend and get the bonus!" />
+            <where>id='5eec5cdb-514a-40da-bcc5-4c5136e96c3a'</where>
+        </update>
+        <update tableName="resource">
+            <column name="description" value="Everything you need to know about company's benefits" />
+            <where>id='dcc017b7-e049-4e9b-a623-56b73423d60a'</where>
+        </update>
+        <update tableName="resource">
+            <column name="description" value="Our organizational structure" />
+            <where>id='9dd214eb-4499-4998-bd16-1f81edaf28ae'</where>
+        </update>
+        <update tableName="resource">
+            <column name="description" value="Performance review may be easy..." />
+            <where>id='e4e1509d-a014-4e3f-b33f-3eb30e832a01'</where>
+        </update>
+        <update tableName="resource">
+            <column name="description" value="Our top secret security policies" />
+            <where>id='0ebbaab9-f99b-4d74-bf68-ba7e878e77c5'</where>
+        </update>
+
+        <rollback>
+            <delete tableName="resource"/>
+        </rollback>
+    </changeSet>
+
+    <changeSet id="add-cop-resource" author="tkhusainov">
+        <insert tableName="resource">
+            <column name="id" value="c3d29313-ab0a-4980-b223-e604b19d768c"/>
+            <column name="title" value="CoP"/>
+            <column name="description" value="Community of Practices" />
+            <column name="link" value="https://sites.google.com/a/griddynamics.com/cto/cop"/>
+            <column name="image_link" value="resources/cop.png"/>
+        </insert>
+
+        <rollback>
+            <delete tableName="resource">
+                <where>id='c3d29313-ab0a-4980-b223-e604b19d768c'</where>
+            </delete>
+        </rollback>
+    </changeSet>
+
+    <changeSet id="add-it-wiki" author="vbosikashvili">
+        <insert tableName="resource">
+            <column name="id" value="c3d29313-rb0y-0532-g553-a604b43e447e"/>
+            <column name="title" value="IT wiki"/>
+            <column name="description" value="Everything about IT" />
+            <column name="link" value="https://wiki.griddynamics.net/display/IT/Home"/>
+            <column name="image_link" value="resources/it-wiki.jpg"/>
+        </insert>
+
+        <rollback>
+            <delete tableName="resource">
+                <where>id='c3d29313-rb0y-0532-g553-a604b43e447e'</where>
+            </delete>
+        </rollback>
+    </changeSet>
+    
+    <changeSet id="add images" author="devlakhova">
+        <!-- Bamboo -->
+        <sql>UPDATE resource SET image_link = '18bc3657-c222-4922-a23c-d543e0bed82c' WHERE id = 'f87ff644-6c2f-4b22-bb18-dd209a74a849';</sql>
+        <!-- Benefit -->
+        <sql>UPDATE resource SET image_link = 'c1f3a39f-7843-46ad-b16f-3bdc062bd564' WHERE id = 'dcc017b7-e049-4e9b-a623-56b73423d60a';</sql>
+        <!-- COP -->
+        <sql>UPDATE resource SET image_link = '880caac8-3a5d-45e0-8537-865eac481bae' WHERE id = 'c3d29313-ab0a-4980-b223-e604b19d768c';</sql>
+        <!-- Medical -->
+        <sql>UPDATE resource SET image_link = 'bc408e8e-7461-4d56-a052-0bf328f18048' WHERE id = 'e9ea0076-c358-43c6-8cde-6cc9691e6edd';</sql>
+        <!-- PR -->
+        <sql>UPDATE resource SET image_link = 'fc7491ca-5bdc-431d-8b9c-33ed5e286fc0' WHERE id = 'd540c628-71d0-4e26-a745-8a0f3a96101e';</sql>
+        <!-- PMO -->
+        <sql>UPDATE resource SET image_link = 'b77863f7-bedd-483d-8a24-b60e0acceb0a' WHERE id = 'dbf9e4de-0f5a-4ed7-ab31-6be82b4ca160';</sql>
+        <!-- Refferal-->
+        <sql>UPDATE resource SET image_link = '339aa754-9ec9-41de-91ac-889d19f92e1e' WHERE id = '5eec5cdb-514a-40da-bcc5-4c5136e96c3a';</sql>
+        <!-- Security -->
+        <sql>UPDATE resource SET image_link = '6935cbac-d986-452d-adf9-aef1de404fa3' WHERE id = '0ebbaab9-f99b-4d74-bf68-ba7e878e77c5';</sql>
+        <!-- Skill tree -->
+        <sql>UPDATE resource SET image_link = '6bc06be7-fa3f-402e-b2c7-44211250a24c' WHERE id = 'e4e1509d-a014-4e3f-b33f-3eb30e832a01';</sql>
+        <!-- Travel -->
+        <sql>UPDATE resource SET image_link = '05736d2f-cae1-46a7-9613-e569e223ab83' WHERE id = '614a36cb-65c8-44d1-a578-30054802cdd1';</sql>
+        <!-- Whois -->
+        <sql>UPDATE resource SET image_link = '0f440b38-9303-4786-a1b2-f7884990a5d7' WHERE id = '9dd214eb-4499-4998-bd16-1f81edaf28ae';</sql>
+        <!-- Wiki -->
+        <sql>UPDATE resource SET image_link = '91412821-0889-4ce7-8c3a-b839be4b1c81' WHERE id = '7b6ae3b7-a2e4-49ed-868a-e66fb319ee7e';</sql>
+        <!-- GD -->
+        <sql>UPDATE resource SET image_link = 'ef664e7a-5429-4973-980d-c596c5c329db' WHERE id = 'cbd29313-ab9a-4980-b223-e604a19d769c';</sql>
+    </changeSet>
+
+</databaseChangeLog>

@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<databaseChangeLog
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+         http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.1.xsd">
+
+    <changeSet id="release-1.0" author="tmagrys" context="default">
+        <insert tableName="EMPLOYEE_ROLE">
+            <column name="id">21d9c17d-30d3-4cd6-9366-813dff9389f9</column>
+            <column name="LDAP_NAME">tmagrys</column>
+            <column name="ROLE_NAME">CAN_MOVE_OTHER_EMPLOYEES</column>
+        </insert>
+        <insert tableName="EMPLOYEE_ROLE">
+            <column name="id">a51c2dc7-5cbe-471d-b8c6-62e3a7325a2f</column>
+            <column name="LDAP_NAME">tmagrys</column>
+            <column name="ROLE_NAME">CAN_SEE_REPORTS</column>
+        </insert>
+
+        <insert tableName="EMPLOYEE_ROLE">
+            <column name="id">ffebb23b-9056-4291-82ce-aece1f444856</column>
+            <column name="LDAP_NAME">pmazur</column>
+            <column name="ROLE_NAME">CAN_MOVE_OTHER_EMPLOYEES</column>
+        </insert>
+        <insert tableName="EMPLOYEE_ROLE">
+            <column name="id">bce4be38-9b9b-436a-88a6-0e3a5d64a879</column>
+            <column name="LDAP_NAME">pmazur</column>
+            <column name="ROLE_NAME">CAN_SEE_REPORTS</column>
+        </insert>
+
+        <insert tableName="EMPLOYEE_ROLE">
+            <column name="id">1e2d94ec-a191-42d8-8d7d-558c41d82539</column>
+            <column name="LDAP_NAME">ylauresh</column>
+            <column name="ROLE_NAME">CAN_MOVE_OTHER_EMPLOYEES</column>
+        </insert>
+        <insert tableName="EMPLOYEE_ROLE">
+            <column name="id">df7afb68-056c-4ba0-8e83-bce311796a05</column>
+            <column name="LDAP_NAME">ylauresh</column>
+            <column name="ROLE_NAME">CAN_SEE_REPORTS</column>
+        </insert>
+
+        <insert tableName="EMPLOYEE_ROLE">
+            <column name="id">5b11e134-cec9-46b6-9b5b-20bfd656866a</column>
+            <column name="LDAP_NAME">obarinov</column>
+            <column name="ROLE_NAME">CAN_MOVE_OTHER_EMPLOYEES</column>
+        </insert>
+        <insert tableName="EMPLOYEE_ROLE">
+            <column name="id">c93a7eb1-9ed7-4b3f-a1ba-1d8ec95a4e3e</column>
+            <column name="LDAP_NAME">obarinov</column>
+            <column name="ROLE_NAME">CAN_SEE_REPORTS</column>
+        </insert>
+
+        <insert tableName="EMPLOYEE_ROLE">
+            <column name="id">b4a9ef9d-528c-4e9a-9746-a1fbc8733705</column>
+            <column name="LDAP_NAME">dkholodov</column>
+            <column name="ROLE_NAME">CAN_MOVE_OTHER_EMPLOYEES</column>
+        </insert>
+        <insert tableName="EMPLOYEE_ROLE">
+            <column name="id">bda35717-c362-40c6-8d75-9012cf74373c</column>
+            <column name="LDAP_NAME">dkholodov</column>
+            <column name="ROLE_NAME">CAN_SEE_REPORTS</column>
+        </insert>
+
+        <insert tableName="EMPLOYEE_ROLE">
+            <column name="id">bbdbcc14-8567-49c5-97df-b902f80ef6bd</column>
+            <column name="LDAP_NAME">kras</column>
+            <column name="ROLE_NAME">CAN_MOVE_OTHER_EMPLOYEES</column>
+        </insert>
+        <insert tableName="EMPLOYEE_ROLE">
+            <column name="id">82d75c4b-c612-4184-81a0-687d46295d00</column>
+            <column name="LDAP_NAME">kras</column>
+            <column name="ROLE_NAME">CAN_SEE_REPORTS</column>
+        </insert>
+
+    </changeSet>
+
+    <changeSet id="release-1.0-2" author="tmagrys" context="default">
+        <insert tableName="EMPLOYEE_ROLE">
+            <column name="id">0c2c80eb-44c0-43d2-8817-16e020789722</column>
+            <column name="LDAP_NAME">ituzikova</column>
+            <column name="ROLE_NAME">CAN_MOVE_OTHER_EMPLOYEES</column>
+        </insert>
+        <insert tableName="EMPLOYEE_ROLE">
+            <column name="id">563e234a-2bf9-4577-b927-73d6f9be299a</column>
+            <column name="LDAP_NAME">ituzikova</column>
+            <column name="ROLE_NAME">CAN_SEE_REPORTS</column>
+        </insert>
+
+        <insert tableName="EMPLOYEE_ROLE">
+            <column name="id">5154a4cb-6213-4683-b5d9-37de18196e41</column>
+            <column name="LDAP_NAME">dzaytsev</column>
+            <column name="ROLE_NAME">CAN_MOVE_OTHER_EMPLOYEES</column>
+        </insert>
+        <insert tableName="EMPLOYEE_ROLE">
+            <column name="id">fb75ccab-44a6-4da5-8ffc-fe4aa4623ad1</column>
+            <column name="LDAP_NAME">dzaytsev</column>
+            <column name="ROLE_NAME">CAN_SEE_REPORTS</column>
+        </insert>
+
+        <insert tableName="EMPLOYEE_ROLE">
+            <column name="id">5fb498d7-dc66-4e63-886a-a417ed5a6dd8</column>
+            <column name="LDAP_NAME">nromanova</column>
+            <column name="ROLE_NAME">CAN_MOVE_OTHER_EMPLOYEES</column>
+        </insert>
+        <insert tableName="EMPLOYEE_ROLE">
+            <column name="id">33552b97-ee65-4be0-bd39-d16d75268940</column>
+            <column name="LDAP_NAME">nromanova</column>
+            <column name="ROLE_NAME">CAN_SEE_REPORTS</column>
+        </insert>
+
+        <insert tableName="EMPLOYEE_ROLE">
+            <column name="id">29567bce-40f4-4391-b812-f40284598645</column>
+            <column name="LDAP_NAME">sakhundova</column>
+            <column name="ROLE_NAME">CAN_MOVE_OTHER_EMPLOYEES</column>
+        </insert>
+        <insert tableName="EMPLOYEE_ROLE">
+            <column name="id">898d3e7d-3a3f-4053-bae4-b346f75b9ac0</column>
+            <column name="LDAP_NAME">sakhundova</column>
+            <column name="ROLE_NAME">CAN_SEE_REPORTS</column>
+        </insert>
+
+        <insert tableName="EMPLOYEE_ROLE">
+            <column name="id">4a9e7805-9e22-43da-bc7f-82ef733185a6</column>
+            <column name="LDAP_NAME">yfilatova</column>
+            <column name="ROLE_NAME">CAN_MOVE_OTHER_EMPLOYEES</column>
+        </insert>
+        <insert tableName="EMPLOYEE_ROLE">
+            <column name="id">00a37b69-6da3-42d3-bb6f-d86577215f7c</column>
+            <column name="LDAP_NAME">yfilatova</column>
+            <column name="ROLE_NAME">CAN_SEE_REPORTS</column>
+        </insert>
+
+        <insert tableName="EMPLOYEE_ROLE">
+            <column name="id">1c5179eb-7576-4dcd-a883-dd55e335344e</column>
+            <column name="LDAP_NAME">gshchirska</column>
+            <column name="ROLE_NAME">CAN_MOVE_OTHER_EMPLOYEES</column>
+        </insert>
+        <insert tableName="EMPLOYEE_ROLE">
+            <column name="id">ca038138-6fd0-4627-a3b6-e45cd960b0f2</column>
+            <column name="LDAP_NAME">gshchirska</column>
+            <column name="ROLE_NAME">CAN_SEE_REPORTS</column>
+        </insert>
+
+        <insert tableName="EMPLOYEE_ROLE">
+            <column name="id">6c17113e-82d9-4893-8487-5083c9605c75</column>
+            <column name="LDAP_NAME">amatuszczak</column>
+            <column name="ROLE_NAME">CAN_MOVE_OTHER_EMPLOYEES</column>
+        </insert>
+        <insert tableName="EMPLOYEE_ROLE">
+            <column name="id">4c731273-ad9a-49fb-92fa-9d45518318d6</column>
+            <column name="LDAP_NAME">amatuszczak</column>
+            <column name="ROLE_NAME">CAN_SEE_REPORTS</column>
+        </insert>
+
+        <insert tableName="EMPLOYEE_ROLE">
+            <column name="id">e939980c-eeef-4c80-a1da-b66c1b074996</column>
+            <column name="LDAP_NAME">dperedes</column>
+            <column name="ROLE_NAME">CAN_MOVE_OTHER_EMPLOYEES</column>
+        </insert>
+        <insert tableName="EMPLOYEE_ROLE">
+            <column name="id">650b9361-3999-4d76-b705-e19e3edb3721</column>
+            <column name="LDAP_NAME">dperedes</column>
+            <column name="ROLE_NAME">CAN_SEE_REPORTS</column>
+        </insert>
+    </changeSet>
+
+</databaseChangeLog>

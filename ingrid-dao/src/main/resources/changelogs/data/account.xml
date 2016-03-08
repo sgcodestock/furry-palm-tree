@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<databaseChangeLog
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+         http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.1.xsd">
+    <changeSet id="add images" author="devlakhova">
+        <sql>UPDATE account SET image_link = '73d881e6-7bc6-43f4-b7f0-4f4b89d88c16.png' WHERE account_id = 'AEO';</sql>
+        <sql>UPDATE account SET image_link = '79381840-92b0-4c65-af89-ddf0241af02a.png' WHERE account_id = 'Catalina';</sql>
+        <sql>UPDATE account SET image_link = 'ae36d9f3-5c85-402e-a9b6-2b93a6d6e72d.png' WHERE account_id = 'Google';</sql>
+        <sql>UPDATE account SET image_link = '2b766bf7-c51e-41e0-a4cf-1586b14b7fbf.png' WHERE account_id = 'GridDynamics';</sql>
+        <sql>UPDATE account SET image_link = '9df45c4d-82b2-4931-8fe4-f754a55a0ee3.png' WHERE account_id = 'iCrossing';</sql>
+        <sql>UPDATE account SET image_link = 'd87c2863-7245-4e9e-98bf-2bb7f53b5eb4.png' WHERE account_id = 'ING';</sql>
+        <sql>UPDATE account SET image_link = 'c6fdd959-0c9b-44ec-afc9-ee09978deae0.png' WHERE account_id = 'Integral Ad Science';</sql>
+        <sql>UPDATE account SET image_link = '6d3dc961-1c3a-4f87-b74c-01bb92ea9e93.png' WHERE account_id = 'Kohls';</sql>
+        <sql>UPDATE account SET image_link = '1951fc81-a08d-4ac8-b76a-d0f55ee9d057.png' WHERE account_id = 'Macys';</sql>
+        <sql>UPDATE account SET image_link = 'ebd668a2-dae8-4762-9a01-d3f71a536959.png' WHERE account_id = 'Merkle';</sql>
+        <sql>UPDATE account SET image_link = 'ac4971fb-bfba-4aa9-aa66-9d54db8fcb02.png' WHERE account_id = 'Rally Health';</sql>
+        <sql>UPDATE account SET image_link = 'bdab4b82-edd9-4c04-8c23-9fc2d976d4b6.png' WHERE account_id = 'Raymond James';</sql>
+        <sql>UPDATE account SET image_link = '0453ce05-7265-4d14-aa5c-20880563b93a.png' WHERE account_id = 'RingCentral';</sql>
+        <sql>UPDATE account SET image_link = '44dff7e3-ac6a-4f10-9f46-b4206793e05f.png' WHERE account_id = 'Tonomi Engineering';</sql>
+        <sql>UPDATE account SET image_link = '5d5c7a7a-bd91-45f5-8f51-887288ae381a.png' WHERE account_id = 'Tonomi Operations';</sql>
+    </changeSet>
+    <changeSet id="fix duplication of account and projects" author="devlakhova">
+        <sql>DELETE from ACCOUNT
+            where id IN (SELECT id
+            FROM (SELECT row_number() OVER(PARTITION BY account_id), id
+            from ACCOUNT) t
+            WHERE t.row_number > 1));</sql>
+
+        <sql>DELETE from ACCOUNT_PROJECTS
+                where account_id NOT IN (SELECT id FROM ACCOUNT);</sql>
+    </changeSet>
+    <changeSet id="add image links" author="vbosikashvili">
+        <sql>UPDATE account SET image_link = '2b766bf7-c51e-41e0-a4cf-1586b14b7fbf.png' WHERE account_id IN ('CTO','PreSales','Grid Solutions');</sql>
+        <sql>UPDATE account SET image_link = '73d881e6-7bc6-75aw-b7f0-4f4b89d88c16.png' WHERE account_id = 'SVB';</sql>
+        <sql>UPDATE account SET image_link = '73d881e6-8bc6-55aw-b1f0-5f4b89d94c16.png' WHERE account_id = 'Tonomi Field';</sql>
+        <sql>UPDATE account SET image_link = '84d881e9-1tr6-35aw-b1f0-5f4b89d94c11.png' WHERE account_id = 'Sephora';</sql>
+    </changeSet>
+    </databaseChangeLog>

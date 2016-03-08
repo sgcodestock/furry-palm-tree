@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<databaseChangeLog
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+         http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.1.xsd">
+
+    <changeSet id="release-1.0" author="tmagrys" context="default">
+        <addColumn tableName="EMPLOYEE">
+            <column name="ALREADY_PLACED_HIMSELF" type="BOOLEAN" defaultValueBoolean="true">
+                <constraints nullable="false"/>
+            </column>
+        </addColumn>
+    </changeSet>
+
+    <changeSet id="release-1.1" author="tmagrys">
+        <createIndex tableName="EMPLOYEE" indexName="EMPLOYEE_LDAP_NAME" unique="true">
+            <column name="ldap_name"/>
+        </createIndex>
+    </changeSet>
+
+    <changeSet id="update-employee-spec" author="abakulin">
+        <addColumn tableName="EMPLOYEE">
+            <column name="specialization" type="VARCHAR(255)">
+                <constraints nullable="true"/>
+            </column>
+        </addColumn>
+    </changeSet>
+
+</databaseChangeLog>

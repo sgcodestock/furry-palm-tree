@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<databaseChangeLog
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+         http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.1.xsd">
+
+    <changeSet id="create account table" author="ylauresh" context="default">
+        <createTable tableName="ACCOUNT">
+            <column name="ID" type="VARCHAR(255)">
+                <constraints primaryKey="true" nullable="false"/>
+            </column>
+            <column name="ACCOUNT_ID" type="VARCHAR(255)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="DESCRIPTION" type="VARCHAR(255)"/>
+        </createTable>
+    </changeSet>
+
+    <changeSet id="create account_projects table" author="ylauresh" context="default">
+        <createTable tableName="ACCOUNT_PROJECTS">
+            <column name="ACCOUNT_ID" type="VARCHAR(255)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="PROJECT" type="VARCHAR(255)"/>
+        </createTable>
+    </changeSet>
+
+    <changeSet id="add new fields to account" author="devlakhova">
+        <addColumn tableName="ACCOUNT">
+            <column name="IMAGE_LINK" type="VARCHAR(255)"/>
+            <column name="COMPETENCIES" type="VARCHAR(255)"/>
+            <column name="TRENDS_OBJECTIVES" type="VARCHAR(255)"/>
+        </addColumn>
+    </changeSet>
+
+</databaseChangeLog>

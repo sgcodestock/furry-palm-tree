@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<databaseChangeLog
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+         http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.1.xsd">
+
+    <changeSet id="change-loors-logic" author="ylauresh" context="default" runOnChange="true">
+
+        <!-- SARATOV -->
+        <sql>update room SET x=177.476, y=84.2222, width=69.524, height=51.8258 where city = 'SARATOV' and room_id = 'room_sar_716';</sql>
+        <sql>update room SET x=177.488, y=194.0, width=69.512, height=55.0 where city = 'SARATOV' and room_id = 'room_sar_714';</sql>
+        <sql>update room SET x=271.0, y=26.4584, width=89.08499999999998, height=53.5416 where city = 'SARATOV' and room_id = 'room_sar_723';</sql>
+        <sql>update room SET x=177.476, y=249.0, width=69.69, height=60.0 where city = 'SARATOV' and room_id = 'room_sar_713_4';</sql>
+        <sql>update room SET x=577.0, y=362.0, width=53.0, height=76.35000000000002 where city = 'SARATOV' and room_id = 'room_sar_708';</sql>
+        <sql>update room SET x=630.0, y=361.297, width=76.0, height=76.72999999999996 where city = 'SARATOV' and room_id = 'room_sar_707';</sql>
+        <sql>update room SET x=687.386, y=361.297, width=58.333000000000084, height=76.70299999999997 where city = 'SARATOV' and room_id = 'room_sar_706';</sql>
+        <sql>update room SET x=745.719, y=361.297, width=75.28099999999995, height=76.70299999999997 where city = 'SARATOV' and room_id = 'room_sar_705';</sql>
+        <sql>update room SET x=177.488, y=308.0, width=150.512, height=123.0 where city = 'SARATOV' and room_id = 'room_sar_713_3';</sql>
+        <sql>update room SET x=271.0, y=80.0, width=89.0, height=53.9319 where city = 'SARATOV' and room_id = 'room_sar_724';</sql>
+        <sql>update room SET x=271.0, y=133.671, width=89.0849, height=56.3288 where city = 'SARATOV' and room_id = 'room_sar_725';</sql>
+        <sql>update room SET x=271.0, y=189.457, width=89.0849, height=78.5434 where city = 'SARATOV' and room_id = 'room_sar_726';</sql>
+        <sql>update room SET x=470.955, y=362.0, width=55.0452, height=63.0 where city = 'SARATOV' and room_id = 'room_sar_710';</sql>
+        <sql>update room SET x=555.15, y=387.0, width=21.000, height=39.000 where city = 'SARATOV' and room_id = 'room_sar_709_1';</sql>
+        <sql>update room SET x=526.15, y=362.0, width=50.8505, height=62.9912 where city = 'SARATOV' and room_id = 'room_sar_709_2';</sql>
+        <sql>update room SET x=539.0, y=247.659, width=49.4475, height=71.9 where city = 'SARATOV' and room_id = 'room_sar_701_3';</sql>
+        <sql>update room SET x=588.505, y=247.659, width=51.5525, height=91.3413 where city = 'SARATOV' and room_id = 'room_sar_702';</sql>
+        <sql>update room SET x=640.058, y=247.659, width=54.9424, height=91.3413 where city = 'SARATOV' and room_id = 'room_sar_703';</sql>
+        <sql>update room SET x=694.468, y=247.659, width=51.6979, height=91.3413 where city = 'SARATOV' and room_id = 'room_sar_704_1';</sql>
+        <sql>update room SET x=382.0, y=26.1186, width=438.49199999999996, height=201.88139999999999 where city = 'SARATOV' and room_id = 'room_bench';</sql>
+
+        <!-- PETERSBURG -->
+        <sql>update room SET x=992.00641, y=-107.49049, width=49.865479, height=89.950951 where city = 'PETERSBURG' and room_id = 'room_spb_501_b';</sql>
+        <sql>update room SET x=882.75415, y=-107.49049, width=108.79452, height=89.950951 where city = 'PETERSBURG' and room_id = 'room_spb_502_b';</sql>
+        <sql>update room SET x=831.23016, y=-107.49049, width=51.093758, height=89.950951 where city = 'PETERSBURG' and room_id = 'room_spb_503_b';</sql>
+        <sql>update room SET x=671.34991, y=-107.49049, width=159.9198, height=89.950951 where city = 'PETERSBURG' and room_id = 'room_spb_504_b';</sql>
+        <sql>update room SET x=618.77557, y=-107.41154, width=51.765514, height=89.392586 where city = 'PETERSBURG' and room_id = 'room_spb_505_b';</sql>
+        <sql>update room SET x=562.34729, y=-107.41154, width=55.796104, height=65.802132 where city = 'PETERSBURG' and room_id = 'room_spb_506_b';</sql>
+        <sql>update room SET x=454.86481, y=-107.41154, width=107.27963, height=90.066605 where city = 'PETERSBURG' and room_id = 'room_spb_507_b';</sql>
+        <sql>update room SET x=394.40607, y=-107.412, width=59.892372, height=89.636055 where city = 'PETERSBURG' and room_id = 'room_spb_508_b';</sql>
+        <sql>update room SET x=287.52881, y=-107.412, width=106.44337, height=89.636055 where city = 'PETERSBURG' and room_id = 'room_spb_509_b';</sql>
+        <sql>update room SET x=992.74579, y=17.269304, width=49.966965, height=73.774643 where city = 'PETERSBURG' and room_id = 'room_spb_524_b';</sql>
+        <sql>update room SET x=963.7702, y=17.269304, width=28.499893, height=73.774643 where city = 'PETERSBURG' and room_id = 'room_spb_523_b';</sql>
+        <sql>update room SET x=936.69452, y=17.269304, width=26.589979, height=73.774643 where city = 'PETERSBURG' and room_id = 'room_spb_522_b';</sql>
+        <sql>update room SET x=909.61896, y=17.269304, width=26.711201, height=73.774643 where city = 'PETERSBURG' and room_id = 'room_spb_521_b';</sql>
+        <sql>update room SET x=883.01831, y=17.408928, width=26.124842, height=74.111649 where city = 'PETERSBURG' and room_id = 'room_spb_520_b';</sql>
+        <sql>update room SET x=857.84277, y=17.269304, width=25.053604, height=74.111649 where city = 'PETERSBURG' and room_id = 'room_spb_519_b';</sql>
+        <sql>update room SET x=831.97998, y=17.297188, width=25.78093, height=74.111649 where city = 'PETERSBURG' and room_id = 'room_spb_518_b';</sql>
+        <sql>update room SET x=725.91669, y=17.297188, width=105.95335, height=74.111649 where city = 'PETERSBURG' and room_id = 'room_spb_517_b';</sql>
+        <sql>update room SET x=617.39862, y=17.297188, width=108.1349, height=74.111649 where city = 'PETERSBURG' and room_id = 'room_spb_516_b';</sql>
+        <sql>update room SET x=509.87833, y=17.297188, width=107.16515, height=74.111649 where city = 'PETERSBURG' and room_id = 'room_spb_515_b';</sql>
+        <sql>update room SET x=402.76953, y=17.297188, width=106.9227, height=74.111649 where city = 'PETERSBURG' and room_id = 'room_spb_514_b';</sql>
+        <sql>update room SET x=349.69995, y=17.297188, width=52.873337, height=74.111649 where city = 'PETERSBURG' and room_id = 'room_spb_513_b';</sql>
+        <sql>update room SET x=1042.2991, y=-188.75288, width=49.70454, height=45.429825 where city = 'PETERSBURG' and room_id = 'room_spb_512_v';</sql>
+        <sql>update room SET x=1042.6627, y=-142.72006, width=49.462105, height=42.733768 where city = 'PETERSBURG' and room_id = 'room_spb_511_v';</sql>
+        <sql>update room SET x=1042.728, y=-99.385887, width=49.750225, height=27.005997 where city = 'PETERSBURG' and room_id = 'room_spb_510_v';</sql>
+        <sql>update room SET x=1042.728, y=-72.117973, width=66.142845, height=40.725548 where city = 'PETERSBURG' and room_id = 'room_spb_509_v';</sql>
+        <sql>update room SET x=1107.8503, y=-188.27625, width=64.429855, height=100.23872 where city = 'PETERSBURG' and room_id = 'room_spb_513_v';</sql>
+        <sql>update room SET x=1064.2246, y=1.0417674, width=49.750225, height=27.005997 where city = 'PETERSBURG' and room_id = 'room_spb_516_v';</sql>
+        <sql>update room SET x=1159.8608, y=-30.859272, width=76.780121, height=107.87661 where city = 'PETERSBURG' and room_id = 'room_spb_515_v';</sql>
+        <sql>update room SET x=1170.311, y=76.985329, width=66.329895, height=51.153206 where city = 'PETERSBURG' and room_id = 'room_spb_500_v';</sql>
+        <sql>update room SET x=1159.8608, y=128.45451, width=76.780121, height=52.6991 where city = 'PETERSBURG' and room_id = 'room_spb_501_v';</sql>
+        <sql>update room SET x=1159.8608, y=181.35696, width=76.780121, height=107.99822 where city = 'PETERSBURG' and room_id = 'room_spb_502_v';</sql>
+        <sql>update room SET x=1159.6531, y=290.38818, width=104.53837, height=72.070084 where city = 'PETERSBURG' and room_id = 'room_spb_503_v';</sql>
+        <sql>update room SET x=1130.8853, y=397.30368, width=39.445839, height=53.851303 where city = 'PETERSBURG' and room_id = 'room_spb_504_v';</sql>
+        <sql>update room SET x=1043.9583, y=290.92773, width=86.471954, height=101.5067 where city = 'PETERSBURG' and room_id = 'room_spb_505_v';</sql>
+        <sql>update room SET x=244.98019, y=125.58952, width=760.12549, height=313.68393 where city = 'PETERSBURG' and room_id = 'room_bench';</sql>
+
+        <!-- MENLOPARK -->
+        <sql>update room SET x=228.12236, y=20.000, width=92.000, height=56.000 where city = 'MENLOPARK' and room_id = 'room_mp_1';</sql>
+        <sql>update room SET x=228.12236, y=76.228424, width=57.337196, height=53.39196 where city = 'MENLOPARK' and room_id = 'room_mp_2';</sql>
+        <sql>update room SET x=228.22237, y=129.76651, width=57.337196, height=50.361504 where city = 'MENLOPARK' and room_id = 'room_mp_3';</sql>
+        <sql>update room SET x=228.32742, y=231.79193, width=57.337196, height=50.361504 where city = 'MENLOPARK' and room_id = 'room_mp_4';</sql>
+        <sql>update room SET x=228.32742, y=422.71075, width=55.821968, height=76.120392 where city = 'MENLOPARK' and room_id = 'room_mp_5';</sql>
+        <sql>update room SET x=307.57785, y=517.6651, width=48.245827, height=57.937645 where city = 'MENLOPARK' and room_id = 'room_mp_6';</sql>
+        <sql>update room SET x=228.12236, y=575.22237, width=160.000, height=186.000 where city = 'MENLOPARK' and room_id = 'room_mp_7';</sql>
+        <sql>update room SET x=454.56863, y=281.61578, width=206.07112, height=308.09653 where city = 'MENLOPARK' and room_id = 'room_bench';</sql>
+
+        <!-- KRAKOW -->
+        <sql>update room SET x=335.000, y=216.000, width=56.000, height=67.000 where city = 'KRAKOV' and room_id = 'room_kr_1';</sql>
+        <sql>update room SET x=418.000, y=216.000, width=61.000, height=68.000 where city = 'KRAKOV' and room_id = 'room_kr_2';</sql>
+        <sql>update room SET x=335.000, y=283.000, width=56.000, height=43.000 where city = 'KRAKOV' and room_id = 'room_kr_3';</sql>
+        <sql>update room SET x=335.000, y=404.000, width=145.000, height=70.000 where city = 'KRAKOV' and room_id = 'room_kr_4';</sql>
+        <sql>update room SET x=498.000, y=216.000, width=208.000, height=168.000 where city = 'KRAKOV' and room_id = 'room_bench' and floor = 0;</sql>
+
+        <!-- KHARKOV 4 floor-->
+        <sql>update room SET x=260.92664, y=46.098389, width=149.50095, height=86.999954 where city = 'KHARKOV' and room_id = 'room_hr_4_panama' and floor = 0;</sql>
+        <sql>update room SET x=260.92664, y=133.8054, width=61.793739, height=129.69998 where city = 'KHARKOV' and room_id = 'room_hr_4_sydney' and floor = 0;</sql>
+        <sql>update room SET x=349.02094, y=133.8054, width=61.793739, height=104.24415 where city = 'KHARKOV' and room_id = 'room_hr_4_petersburg' and floor = 0;</sql>
+        <sql>update room SET x=321.84537, y=46.382217, width=27.351765, height=44.579674 where city = 'KHARKOV' and room_id = 'room_hr_4_costa_rika' and floor = 0;</sql>
+        <sql>update room SET x=481.5, y=44.19239, width=238.0, height=202.0 where city = 'KHARKOV' and room_id = 'room_bench' and floor = 0;</sql>
+
+        <!-- KHARKOV 5 floor-->
+        <sql>update room SET x=356.12946, y=38.70948, width=149.50082, height=86.999954 where city = 'KHARKOV' and room_id = 'room_hr_5_tokyo' and floor = 1;</sql>
+        <sql>update room SET x=356.12946, y=126.41645, width=61.674793, height=129.19998 where city = 'KHARKOV' and room_id = 'room_hr_5_madrid' and floor = 1;</sql>
+        <sql>update room SET x=444.33862, y=126.41645, width=61.17976, height=87.744148 where city = 'KHARKOV' and room_id = 'room_hr_5_monaco' and floor = 1;</sql>
+        <sql>update room SET x=474.19232, y=214.56818, width=31.424788, height=41.039597 where city = 'KHARKOV' and room_id = 'room_hr_5_montecarlo' and floor = 1;</sql>
+        <sql>update room SET x=356.12946, y=284.65753, width=61.674793, height=56.225891 where city = 'KHARKOV' and room_id = 'room_hr_5_paris' and floor = 1;</sql>
+        <sql>update room SET x=356.01956, y=341.56818, width=61.976784, height=30.039597 where city = 'KHARKOV' and room_id = 'room_hr_5_room_2' and floor = 1;</sql>
+        <sql>update room SET x=608.79266, y=285.85382, width=56.091736, height=55.744247 where city = 'KHARKOV' and room_id = 'room_hr_5_mexico' and floor = 1;</sql>
+        <sql>update room SET x=763.00916, y=399.42242, width=49.085743, height=44.660942 where city = 'KHARKOV' and room_id = 'room_hr_5_new_york' and floor = 1;</sql>
+        <sql>update room SET x=665.5097, y=371.92242, width=59.585697, height=28.660942 where city = 'KHARKOV' and room_id = 'room_hr_5_room_1' and floor = 1;</sql>
+        <sql>update room SET x=665.5097, y=401.42242, width=36.585751, height=43.160942 where city = 'KHARKOV' and room_id = 'room_hr_5_wellington' and floor = 1;</sql>
+        <sql>update room SET x=665.5097, y=445.42242, width=36.585751, height=42.160942 where city = 'KHARKOV' and room_id = 'room_hr_5_luxembourg' and floor = 1;</sql>
+        <sql>update room SET x=763.10913, y=444.92242, width=49.085743, height=44.160942 where city = 'KHARKOV' and room_id = 'room_hr_5_washington' and floor = 1;</sql>
+        <sql>update room SET x=665.5097, y=488.42242, width=146.58566, height=129.66093 where city = 'KHARKOV' and room_id = 'room_hr_5_rome' and floor = 1;</sql>
+        <sql>update room SET x=389.33969, y=126.88691, width=27.889257, height=43.868023 where city = 'KHARKOV' and room_id = 'room_hr_5_meyrin' and floor = 1;</sql>
+        <sql>update room SET x=752.00916, y=488.92242, width=60.085697, height=39.160942 where city = 'KHARKOV' and room_id = 'room_hr_5_vatican' and floor = 1;</sql>
+        <sql>update room SET x=589.99988, y=39.826302, width=224.63734, height=200.59589 where city = 'KHARKOV' and room_id = 'room_bench' and floor = 1;</sql>
+
+    </changeSet>
+</databaseChangeLog>

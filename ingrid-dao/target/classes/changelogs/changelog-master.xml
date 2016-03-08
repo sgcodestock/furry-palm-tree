@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<databaseChangeLog
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+         http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.1.xsd">
+
+    <include file="classpath*:/changelogs/schema/accounts.xml"/>
+    <include file="classpath*:/changelogs/schema/employee.xml"/>
+    <include file="classpath*:/changelogs/schema/employee-role.xml"/>
+    <include file="classpath*:/changelogs/schema/employee-vacation.xml"/>
+    <include file="classpath*:/changelogs/schema/holiday.xml"/>
+    <include file="classpath*:/changelogs/schema/location-info.xml"/>
+    <include file="classpath*:/changelogs/schema/permissions.xml"/>
+    <include file="classpath*:/changelogs/schema/permissions-aggregator.xml"/>
+    <include file="classpath*:/changelogs/schema/permissions-aggregator-and-permissions.xml"/>
+    <include file="classpath*:/changelogs/schema/photo.xml"/>
+    <include file="classpath*:/changelogs/schema/projects.xml"/>
+    <include file="classpath*:/changelogs/schema/room.xml"/>
+    <include file="classpath*:/changelogs/schema/account.xml"/>
+    <include file="classpath*:/changelogs/schema/FAQ.xml"/>
+    <include file="classpath*:/changelogs/schema/resource.xml"/>
+    <include file="classpath*:/changelogs/schema/image.xml"/>
+    <include file="classpath*:/changelogs/schema/backup-location-info.xml"/>
+    <include file="classpath*:/changelogs/schema/room-coords-add.xml"/>
+    <include file="classpath*:/changelogs/schema/employee-move.xml"/>
+    <include file="classpath*:/changelogs/schema/feedback-message.xml"/>
+    <include file="classpath*:/changelogs/schema/last-sync-time.xml"/>
+
+
+    <include file="classpath*:/changelogs/data/room.xml"/>
+    <include file="classpath*:/changelogs/data/user-role.xml"/>
+    <include file="classpath*:/changelogs/data/location-info.xml"/>
+    <include file="classpath*:/changelogs/data/floors.xml"/>
+    <include file="classpath*:/changelogs/data/resources.xml"/>
+    <include file="classpath*:/changelogs/data/room-coords.xml"/>
+    <include file="classpath*:/changelogs/data/update-krakow.xml"/>
+    <include file="classpath*:/changelogs/data/scale-petersburg.xml"/>
+    <include file="classpath*:/changelogs/data/account.xml"/>
+    <include file="classpath*:/changelogs/data/image.xml"/>
+
+    <!-- Release 2-->
+    <include file="classpath*:/changelogs/schema/image-2.xml"/>
+
+    <include file="classpath*:/changelogs/data/image-2.xml"/>
+
+</databaseChangeLog>

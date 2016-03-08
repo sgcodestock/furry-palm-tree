@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<databaseChangeLog
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+         http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.1.xsd">
+
+    <changeSet id="create resource table" author="ylauresh" context="default">
+        <createTable tableName="RESOURCE">
+            <column name="ID" type="VARCHAR(255)">
+                <constraints primaryKey="true" nullable="false"/>
+            </column>
+            <column name="TITLE" type="VARCHAR(255)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="LINK" type="VARCHAR(2000)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="ICON_CLASS" type="VARCHAR(255)">
+                <constraints nullable="false"/>
+            </column>
+        </createTable>
+    </changeSet>
+
+    <changeSet id="drop column iconClass" author="ylauresh">
+        <dropColumn tableName="RESOURCE" columnName="ICON_CLASS"></dropColumn>
+    </changeSet>
+
+    <changeSet id="add column imageLink" author="ylauresh">
+        <addColumn tableName="RESOURCE">
+            <column name="IMAGE_LINK" type="VARCHAR(255)">
+                <constraints nullable="false"/>
+            </column>
+        </addColumn>
+    </changeSet>
+
+    <changeSet id="add column description" author="tkhusainov">
+        <addColumn tableName="RESOURCE">
+            <column name="DESCRIPTION" type="VARCHAR(255)" />
+        </addColumn>
+    </changeSet>
+    <changeSet id="make imageLink nullable" author="devlakhova">
+        <dropNotNullConstraint tableName="resource" columnName="image_link"/>
+    </changeSet>
+    
+</databaseChangeLog>

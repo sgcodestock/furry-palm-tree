@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<databaseChangeLog
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+         http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.1.xsd">
+
+    <changeSet id="create employee move table" author="abakulin" context="default">
+        <createTable tableName="employee_moved_jira_issue">
+            <column name="id" type="varchar(255)">
+                <constraints primaryKey="true" nullable="false"/>
+            </column>
+            <column name="ldap_name" type="varchar(255)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="same_project" type="boolean">
+                <constraints nullable="false"/>
+            </column>
+            <column name="jira_issue_created" type="boolean">
+                <constraints nullable="false"/>
+            </column>
+            <column name="location_info_id" type="varchar(255)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="from_room_id" type="varchar(255)">
+                <constraints nullable="true"/>
+            </column>
+            <column name="to_room_id" type="varchar(255)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="jira_issue_key" type="varchar(255)">
+                <constraints nullable="true"/>
+            </column>
+            <column name="approved" type="boolean">
+                <constraints nullable="true"/>
+            </column>
+        </createTable>
+        
+        <createIndex tableName="employee_moved_jira_issue" indexName="employee_moved_jira_issue_location_info_id">
+            <column name="location_info_id"/>
+        </createIndex>
+    </changeSet>
+
+    <changeSet id="add-link-to-jira-issue" author="abakulin" context="default">
+        <addColumn tableName="employee_moved_jira_issue">
+            <column name="jira_issue_link" type="varchar(1024)">
+                <constraints nullable="true"/>
+            </column>
+        </addColumn>
+    </changeSet>
+
+    <changeSet id="empty-room-available" author="abakulin">
+        <dropNotNullConstraint tableName="employee_moved_jira_issue" columnName="from_room_id"/>
+        <dropNotNullConstraint tableName="employee_moved_jira_issue" columnName="to_room_id"/>
+    </changeSet>
+</databaseChangeLog>

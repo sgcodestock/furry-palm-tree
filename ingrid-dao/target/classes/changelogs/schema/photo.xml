@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<databaseChangeLog
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+         http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.1.xsd">
+
+    <changeSet id="release-1.0" author="tmagrys" context="default">
+        <createTable tableName="PHOTO">
+            <column name="id" type="VARCHAR(255)">
+                <constraints primaryKey="true" nullable="false"/>
+            </column>
+            <column name="LDAP_NAME" type="VARCHAR(255)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="FILE_NAME" type="VARCHAR(255)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="DATA" type="OID">
+                <constraints nullable="false"/>
+            </column>
+        </createTable>
+        <addUniqueConstraint tableName="PHOTO" columnNames="file_name"/>
+    </changeSet>
+
+    <changeSet id="release-1.1" author="tmagrys">
+        <createIndex tableName="PHOTO" indexName="PHOTO_LDAP_NAME">
+            <column name="ldap_name"/>
+        </createIndex>
+    </changeSet>
+
+    <changeSet id="Remove OID type" author="devlakhova">
+        <dropColumn tableName="PHOTO" columnName="DATA"/>
+        <addColumn tableName="PHOTO">
+            <column name="IMAGE_DATA" type="bytea"/>
+        </addColumn>
+    </changeSet>
+
+</databaseChangeLog>

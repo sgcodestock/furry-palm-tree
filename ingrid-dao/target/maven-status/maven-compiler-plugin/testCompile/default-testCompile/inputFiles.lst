@@ -1,0 +1,4 @@
+/Users/slokhmatov/Documents/IdeaProjects/lms/ingrid-backend/ingrid-dao/src/test/java/com/griddynamics/lms/api/dao/database/LastSynchronizationTimeDaoTest.java
+/Users/slokhmatov/Documents/IdeaProjects/lms/ingrid-backend/ingrid-dao/src/test/java/com/griddynamics/lms/api/dao/database/configuration/TestHibernateContextConfiguration.java
+/Users/slokhmatov/Documents/IdeaProjects/lms/ingrid-backend/ingrid-dao/src/test/java/com/griddynamics/lms/api/dao/database/configuration/TestDatabaseDaoContextConfiguration.java
+/Users/slokhmatov/Documents/IdeaProjects/lms/ingrid-backend/ingrid-dao/src/test/java/com/griddynamics/lms/api/dao/ldap/impl/LDAPLastModifyTimestampConverterTest.java

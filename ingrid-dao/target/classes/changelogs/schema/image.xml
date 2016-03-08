@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<databaseChangeLog
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+         http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.1.xsd">
+
+    <changeSet id="release-1.0" author="ylauresh" context="default">
+        <createTable tableName="IMAGE">
+            <column name="id" type="VARCHAR(255)">
+                <constraints primaryKey="true" nullable="false"/>
+            </column>
+            <column name="FILE_TYPE" type="VARCHAR(10)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="DATA" type="OID">
+                <constraints nullable="false"/>
+            </column>
+        </createTable>
+    </changeSet>
+    <changeSet id="image as blob" author="devlakhova">
+        <addColumn tableName="IMAGE">
+            <column name="IMAGE_DATA" type="BYTEA"/>
+        </addColumn>
+        <sql>ALTER TABLE image DROP data;</sql>
+    </changeSet>
+</databaseChangeLog>

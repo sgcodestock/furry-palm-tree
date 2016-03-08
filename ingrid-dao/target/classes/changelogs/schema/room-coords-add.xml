@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<databaseChangeLog
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+         http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.1.xsd">
+
+    <changeSet id="room-coords-add" author="abakulin">
+        <addColumn tableName="room">
+            <column name="x" type="DOUBLE">
+                <constraints nullable="true"/>
+            </column>
+            <column name="y" type="DOUBLE">
+                <constraints nullable="true"/>
+            </column>
+            <column name="width" type="DOUBLE">
+                <constraints nullable="true"/>
+            </column>
+            <column name="height" type="DOUBLE">
+                <constraints nullable="true"/>
+            </column>
+        </addColumn>
+
+        <rollback>
+            <dropColumn tableName="room" columnName="x"/>
+            <dropColumn tableName="room" columnName="y"/>
+            <dropColumn tableName="room" columnName="width"/>
+            <dropColumn tableName="room" columnName="height"/>
+        </rollback>
+    </changeSet>
+
+</databaseChangeLog>
